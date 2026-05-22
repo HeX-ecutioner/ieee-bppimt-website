@@ -1,0 +1,13 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --color-ieee-blue: #00629B;
+  --color-ieee-navy: #0A192F;
+  --color-ieee-light: #F8FAFC;
+}
+
+@layer base {
+  body {
+    @apply bg-ieee-light text-slate-800 font-sans antialiased overflow-x-hidden;
+  }
+}
