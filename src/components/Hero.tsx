@@ -4,7 +4,7 @@ import { FiLinkedin, FiInstagram, FiGithub, FiMail } from 'react-icons/fi';
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-ieee-navy text-white min-h-[100vh] flex items-center pt-24 pb-12">
+    <section className="relative overflow-hidden bg-ieee-navy text-white min-h-[100vh] flex items-center pt-24 pb-16 md:pb-20">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-ieee-blue/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>

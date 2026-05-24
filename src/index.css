@@ -36,3 +36,19 @@
     background: linear-gradient(180deg, #0b7fc2, var(--color-ieee-blue));
   }
 }
+
+@layer utilities {
+  @keyframes past-events-marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-past-events-marquee {
+    animation: past-events-marquee 42s linear infinite;
+  }
+}

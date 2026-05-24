@@ -36,8 +36,23 @@ const events = [
 
 const Events = () => {
   return (
-    <section id="events" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section id="events" className="relative py-24 bg-white overflow-hidden">
+      <div className="pointer-events-none absolute inset-0">
+        <motion.div
+          aria-hidden="true"
+          animate={{ x: [0, 16, 0], y: [0, -10, 0], opacity: [0.14, 0.22, 0.14] }}
+          transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
+          className="absolute top-10 left-[-5rem] h-72 w-72 rounded-full bg-ieee-blue/10 blur-3xl"
+        />
+        <motion.div
+          aria-hidden="true"
+          animate={{ x: [0, -18, 0], y: [0, 12, 0], opacity: [0.12, 0.2, 0.12] }}
+          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+          className="absolute bottom-[-6rem] right-[-4rem] h-80 w-80 rounded-full bg-ieee-navy/10 blur-3xl"
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,98,155,0.08),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(0,41,77,0.06),transparent_30%)]" />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -76,7 +91,7 @@ const Events = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               whileHover={{ y: -8 }}
-              className="bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 group flex flex-col h-full"
+              className="bg-white rounded-3xl overflow-hidden shadow-lg shadow-blue-100/60 border border-blue-100 group flex flex-col h-full"
             >
               {/* Image Container */}
               <div className="relative h-56 overflow-hidden">
@@ -85,7 +100,7 @@ const Events = () => {
                   alt={event.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-ieee-blue tracking-wide uppercase">
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-ieee-blue tracking-wide uppercase border border-blue-100">
                   {event.category}
                 </div>
               </div>
@@ -107,7 +122,7 @@ const Events = () => {
                   {event.description}
                 </p>
                 
-                <div className="mt-auto space-y-3 pt-4 border-t border-slate-100">
+                <div className="mt-auto space-y-3 pt-4 border-t border-blue-100">
                   <div className="flex items-center gap-3 text-sm text-slate-500 font-medium">
                     <Clock className="w-4 h-4 text-slate-400" />
                     {event.time}
