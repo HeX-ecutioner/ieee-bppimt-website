@@ -1,0 +1,68 @@
+{
+  "facultyAdvisors": [
+    {
+      "id": "fs1",
+      "name": "Dr. Alan Turing",
+      "designation": "Head of AI Research",
+      "bio": "Pioneering researcher in machine learning and quantum computing. Guiding the student branch toward innovative technological breakthroughs.",
+      "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400",
+      "linkedin": "#"
+    },
+    {
+      "id": "fs2",
+      "name": "Dr. Grace Hopper",
+      "designation": "Systems & Architecture",
+      "bio": "Expert in scalable systems. Dedicated to mentoring students in building robust, future-proof software architectures.",
+      "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400",
+      "linkedin": "#"
+    }
+  ],
+  "coreTeam": [
+    { 
+      "id": "c1", 
+      "name": "Alex Mercer", 
+      "role": "Chairperson", 
+      "department": "Computer Science", 
+      "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", 
+      "socials": { "linkedin": "#", "github": "#", "email": "#" } 
+    },
+    { 
+      "id": "c2", 
+      "name": "Sarah Chen", 
+      "role": "Vice Chairperson", 
+      "department": "Information Tech", 
+      "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", 
+      "socials": { "linkedin": "#", "github": "#" } 
+    },
+    { 
+      "id": "c3", 
+      "name": "Marcus Johnson", 
+      "role": "Secretary", 
+      "department": "Electrical Eng.", 
+      "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", 
+      "socials": { "linkedin": "#", "email": "#" } 
+    },
+    { 
+      "id": "c4", 
+      "name": "Elena Rodriguez", 
+      "role": "Treasurer", 
+      "department": "Computer Science", 
+      "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", 
+      "socials": { "linkedin": "#", "github": "#" } 
+    }
+  ],
+  "executiveCommittee": [
+    { "id": "e1", "name": "David Kim", "role": "Technical Lead", "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", "socials": { "linkedin": "#", "github": "#" } },
+    { "id": "e2", "name": "Priya Patel", "role": "Design Lead", "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", "socials": { "linkedin": "#" } },
+    { "id": "e3", "name": "James Wilson", "role": "Events Head", "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", "socials": { "linkedin": "#", "email": "#" } },
+    { "id": "e4", "name": "Nina Rusev", "role": "Content Head", "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", "socials": { "linkedin": "#" } },
+    { "id": "e5", "name": "Tarik Omar", "role": "PR Lead", "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", "socials": { "linkedin": "#" } },
+    { "id": "e6", "name": "Fiona Gallagher", "role": "Web Master", "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&q=80&w=300&h=400", "socials": { "linkedin": "#", "github": "#" } }
+  ],
+  "stats": [
+    { "id": "s1", "label": "Active Members", "value": "250+", "icon": "Users" },
+    { "id": "s2", "label": "Events Hosted", "value": "40+", "icon": "Calendar" },
+    { "id": "s3", "label": "Global Awards", "value": "15", "icon": "Award" },
+    { "id": "s4", "label": "Projects Completed", "value": "100+", "icon": "TrendingUp" }
+  ]
+}
