@@ -7,7 +7,32 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-ieee-blue) var(--color-ieee-light);
+    scrollbar-width: thin;
+  }
+
   body {
     @apply bg-ieee-light text-slate-800 font-sans antialiased overflow-x-hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-ieee-light);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-ieee-blue), var(--color-ieee-navy));
+    border-radius: 9999px;
+    border: 2px solid var(--color-ieee-light);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0b7fc2, var(--color-ieee-blue));
   }
 }
