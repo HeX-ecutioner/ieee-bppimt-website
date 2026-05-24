@@ -36,7 +36,7 @@ const events = [
 
 const Events = () => {
   return (
-    <section id="events" className="relative py-24 bg-white overflow-hidden">
+    <section id="events" className="scroll-mt-24 relative py-24 bg-white overflow-hidden">
       <div className="pointer-events-none absolute inset-0">
         <motion.div
           aria-hidden="true"
