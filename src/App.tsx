@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Stats from './components/Stats'
 import About from './components/About'
 import Events from './components/Events'
+import PastEvents from './components/PastEvents'
 import CtaBanner from './components/CtaBanner'
 import Footer from './components/Footer'
 import Team from './components/Team'
@@ -15,6 +16,7 @@ function Home() {
       <Stats />
       <About />
       <Events />
+      <PastEvents />
       <CtaBanner />
     </>
   )
