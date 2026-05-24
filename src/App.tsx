@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Stats from './components/Stats'
 import About from './components/About'
 import Events from './components/Events'
 import PastEvents from './components/PastEvents'
@@ -13,7 +12,6 @@ function Home() {
   return (
     <>
       <Hero />
-      <Stats />
       <About />
       <Events />
       <PastEvents />
@@ -25,9 +23,9 @@ function Home() {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-ieee-light">
+      <div className="relative min-h-screen flex flex-col overflow-hidden bg-[#d9e6f3]">
         <Navbar />
-        <main className="flex-grow">
+        <main className="relative z-10 flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />
