@@ -1,10 +1,10 @@
 .footer-section {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 0;
   position: relative;
   overflow: hidden;
   border-top: 1px solid #0f172a;
   background-image: radial-gradient(circle at top, rgba(0, 98, 155, 0.28), transparent 32%), linear-gradient(180deg, #08111f 0%, #020617 100%);
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 2.5rem;
   -webkit-line-clamp: none;
   line-clamp: none;
@@ -110,6 +110,79 @@
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.025em;
+}
+
+.footer-header-description {
+  margin-top: 0.5rem;
+  color: #94a3b8;
+  max-width: 42rem;
+}
+
+.footer-header-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(103,232,249,0.25);
+  background-color: rgba(103, 232, 249, 0.08);
+  color: #67e8f9;
+  text-decoration: none;
+  font-weight: 600;
+  justify-content: center;
+  min-width: 160px;
+  line-height: 1;
+  transition: transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms;
+  will-change: transform;
+}
+
+.footer-back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background-color: rgba(255,255,255,0.04);
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.footer-cta-button:hover,
+.footer-back-to-top-btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 14px 40px rgba(34,211,238,0.10);
+}
+
+.footer-cta-button:active,
+.footer-back-to-top-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+@media (max-width: 767px) {
+  .footer-header-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .footer-cta-button,
+  .footer-back-to-top-btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -271,6 +344,12 @@
   width: 1rem;
 }
 
+.footer-social-link[aria-label="Facebook"] .footer-social-icon,
+.footer-social-link[aria-label="Instagram"] .footer-social-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .footer-card-title {
   position: relative;
   display: flex;
@@ -306,7 +385,10 @@
 }
 
 .footer-card-title-text {
-  color: #f8fafc;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
   text-shadow: 0 0 16px rgba(255, 255, 255, 0.04);
 }
 

@@ -5,7 +5,6 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Events from './components/Events'
 import PastEvents from './components/PastEvents'
-import CtaBanner from './components/CtaBanner'
 import Footer from './components/Footer'
 import Team from './components/Team'
 import Gallery from './components/Gallery'
@@ -18,7 +17,6 @@ function Home() {
       <About />
       <Events />
       <PastEvents />
-      <CtaBanner />
     </>
   )
 }
@@ -34,6 +32,16 @@ function ScrollManager() {
       if (targetElement) {
         const headerElement = document.getElementById('site-header')
         const headerOffset = headerElement?.getBoundingClientRect().height ?? 0
+
+        if (targetId === 'footer') {
+          const footerTop = window.scrollY + targetElement.getBoundingClientRect().top
+          const top = Math.max(0, footerTop - headerOffset - 8)
+          requestAnimationFrame(() => {
+            window.scrollTo({ top, behavior: 'smooth' })
+          })
+          return
+        }
+
         const extraOffset = 0
         const targetTop = window.scrollY + targetElement.getBoundingClientRect().top - headerOffset - extraOffset
 
