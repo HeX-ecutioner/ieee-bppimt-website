@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Image as ImageIcon, Sparkles } from 'lucide-react';
+import './Gallery.css';
 
 const galleryItems = [
   {
@@ -36,42 +37,42 @@ const galleryItems = [
 
 const Gallery = () => {
   return (
-    <section className="relative pt-32 pb-24 bg-[radial-gradient(circle_at_top,rgba(0,98,155,0.16),transparent_35%),linear-gradient(180deg,#f8fbff_0%,#eef5fb_100%)] overflow-hidden">
-      <div className="pointer-events-none absolute inset-0">
+    <section className="gallery-section">
+      <div className="gallery-bgs">
         <motion.div
           aria-hidden="true"
           animate={{ x: [0, 18, 0], y: [0, -10, 0], opacity: [0.14, 0.22, 0.14] }}
           transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-10 left-[-5rem] h-72 w-72 rounded-full bg-ieee-blue/10 blur-3xl"
+          className="gallery-glow-1"
         />
         <motion.div
           aria-hidden="true"
           animate={{ x: [0, -16, 0], y: [0, 12, 0], opacity: [0.12, 0.18, 0.12] }}
           transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute bottom-[-6rem] right-[-4rem] h-80 w-80 rounded-full bg-ieee-navy/10 blur-3xl"
+          className="gallery-glow-2"
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
+      <div className="gallery-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mb-14"
+          className="gallery-header"
         >
-          <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-ieee-blue mb-4">
-            <ImageIcon className="w-4 h-4" />
+          <p className="gallery-badge">
+            <ImageIcon className="gallery-badge-icon" />
             Gallery
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-5">
-            Moments that show <span className="text-transparent bg-clip-text bg-gradient-to-r from-ieee-blue to-ieee-navy">the branch in motion</span>
+          <h1 className="gallery-title">
+            Moments that show <span className="gallery-title-highlight">the branch in motion</span>
           </h1>
-          <p className="text-lg text-slate-600 leading-relaxed">
+          <p className="gallery-description">
             A visual snapshot of workshops, seminars, hackathons, and the community energy behind IEEE BPPIMT.
           </p>
         </motion.div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="gallery-grid">
           {galleryItems.map((item, index) => (
             <motion.article
               key={item.title}
@@ -80,22 +81,22 @@ const Gallery = () => {
               viewport={{ once: true, margin: '-60px' }}
               transition={{ delay: index * 0.08, duration: 0.5 }}
               whileHover={{ y: -6 }}
-              className="group overflow-hidden rounded-[2rem] border border-blue-100 bg-white shadow-[0_18px_60px_rgba(0,98,155,0.08)]"
+              className="gallery-card group"
             >
-              <div className="relative h-72 overflow-hidden">
+              <div className="gallery-image-container">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="gallery-image"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ieee-navy/80 via-ieee-navy/20 to-transparent" />
-                <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-ieee-blue backdrop-blur-sm">
-                  <Sparkles className="w-3.5 h-3.5" />
+                <div className="gallery-image-gradient" />
+                <div className="gallery-card-badge">
+                  <Sparkles className="gallery-card-badge-icon" />
                   IEEE
                 </div>
-                <div className="absolute bottom-5 left-5 right-5 text-white">
-                  <h2 className="text-2xl font-bold leading-tight">{item.title}</h2>
-                  <p className="mt-2 text-sm text-white/85 leading-relaxed">{item.description}</p>
+                <div className="gallery-card-content">
+                  <h2 className="gallery-card-title">{item.title}</h2>
+                  <p className="gallery-card-description">{item.description}</p>
                 </div>
               </div>
             </motion.article>
@@ -107,17 +108,17 @@ const Gallery = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-14 flex flex-wrap items-center justify-between gap-6 rounded-[2rem] border border-blue-100 bg-white px-6 py-5 shadow-[0_18px_50px_rgba(0,98,155,0.08)]"
+          className="gallery-explore"
         >
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-ieee-blue mb-2">Explore more</p>
-            <p className="text-slate-700">Want to add event albums or past-year highlights next?</p>
+          <div className="gallery-explore-text-container">
+            <p className="gallery-explore-label">Explore more</p>
+            <p className="gallery-explore-question">Want to add event albums or past-year highlights next?</p>
           </div>
           <a
             href="/#events"
-            className="inline-flex items-center gap-2 text-ieee-blue font-semibold hover:text-ieee-navy transition-colors"
+            className="gallery-explore-link"
           >
-            Jump to Events <ArrowRight className="w-5 h-5" />
+            Jump to Events <ArrowRight className="gallery-explore-icon" />
           </a>
         </motion.div>
       </div>

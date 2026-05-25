@@ -9,6 +9,7 @@ import CtaBanner from './components/CtaBanner'
 import Footer from './components/Footer'
 import Team from './components/Team'
 import Gallery from './components/Gallery'
+import './App.css'
 
 function Home() {
   return (
@@ -53,10 +54,10 @@ function ScrollManager() {
 function App() {
   return (
     <Router>
-      <div className="relative min-h-screen flex flex-col overflow-hidden bg-[#d9e6f3]">
+      <div className="app-wrapper">
         <ScrollManager />
         <Navbar />
-        <main className="relative z-10 flex-grow">
+        <main className="app-main">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />

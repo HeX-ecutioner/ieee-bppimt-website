@@ -1,54 +1,76 @@
-﻿@import "tailwindcss";
-
-@theme {
-  --color-ieee-blue: #00629B;
-  --color-ieee-navy: #0A192F;
-  --color-ieee-light: #F8FAFC;
+﻿:root {
+  --color-ieee-blue: #00629b;
+  --color-ieee-navy: #0a192f;
+  --color-ieee-light: #f8fafc;
+  --color-page-bg: #d9e6f3;
+  --color-page-text: #1f2937;
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    scrollbar-color: var(--color-ieee-blue) var(--color-ieee-light);
-    scrollbar-width: thin;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-ieee-blue) var(--color-ieee-light);
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page-bg);
+  color: var(--color-page-text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img,
+iframe,
+svg {
+  display: block;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(0, 194, 255, 0.28);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ieee-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-ieee-blue), var(--color-ieee-navy));
+  border-radius: 9999px;
+  border: 2px solid var(--color-ieee-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0b7fc2, var(--color-ieee-blue));
+}
+
+@keyframes past-events-marquee {
+  from {
+    transform: translateX(0);
   }
 
-  body {
-    @apply bg-ieee-light text-slate-800 font-sans antialiased overflow-x-hidden;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: var(--color-ieee-light);
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--color-ieee-blue), var(--color-ieee-navy));
-    border-radius: 9999px;
-    border: 2px solid var(--color-ieee-light);
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #0b7fc2, var(--color-ieee-blue));
+  to {
+    transform: translateX(-50%);
   }
 }
 
-@layer utilities {
-  @keyframes past-events-marquee {
-    from {
-      transform: translateX(0);
-    }
-
-    to {
-      transform: translateX(-50%);
-    }
-  }
-
-  .animate-past-events-marquee {
-    animation: past-events-marquee 42s linear infinite;
-  }
+.animate-past-events-marquee {
+  animation: past-events-marquee 42s linear infinite;
 }

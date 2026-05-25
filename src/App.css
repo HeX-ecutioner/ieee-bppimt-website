@@ -1,0 +1,14 @@
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #d9e6f3;
+}
+
+.app-main {
+  position: relative;
+  z-index: 10;
+  flex-grow: 1;
+}
