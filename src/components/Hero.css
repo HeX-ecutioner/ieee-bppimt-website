@@ -28,9 +28,9 @@
   right: 0;
   width: 800px;
   height: 800px;
-  background-color: rgba(0, 98, 155, 0.2);
+  background: radial-gradient(circle, rgba(0, 98, 155, 0.2) 0%, transparent 70%);
   border-radius: 9999px;
-  filter: blur(120px);
+  
   transform: translate(33.333%, -50%);
 }
 
@@ -40,9 +40,9 @@
   left: 0;
   width: 600px;
   height: 600px;
-  background-color: rgba(99, 102, 241, 0.1);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
   border-radius: 9999px;
-  filter: blur(100px);
+  
   transform: translate(-25%, 33.333%);
 }
 
@@ -190,7 +190,7 @@
 }
 
 .hero-btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
 }
 
 .hero-socials {
@@ -204,7 +204,7 @@
   height: 3rem;
   border-radius: 9999px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.05);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
   display: flex;
   align-items: center;
   justify-content: center;

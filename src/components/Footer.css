@@ -32,8 +32,8 @@
   height: 16rem;
   width: 16rem;
   border-radius: 9999px;
-  background-color: rgba(0, 98, 155, 0.12);
-  filter: blur(64px);
+  background: radial-gradient(circle, rgba(0, 98, 155, 0.12) 0%, transparent 70%);
+  
 }
 
 .footer-glow-2 {
@@ -43,8 +43,8 @@
   height: 18rem;
   width: 18rem;
   border-radius: 9999px;
-  background-color: rgba(34, 211, 238, 0.1);
-  filter: blur(64px);
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+  
 }
 
 .footer-container {
@@ -70,10 +70,9 @@
   gap: 1.5rem;
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background-color: rgba(255, 255, 255, 0.05);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
   padding: 1.5rem;
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  
 }
 
 @media (min-width: 768px) {
@@ -133,7 +132,7 @@
   padding: 0.6rem 1.25rem;
   border-radius: 9999px;
   border: 1px solid rgba(103,232,249,0.25);
-  background-color: rgba(103, 232, 249, 0.08);
+  background: radial-gradient(circle, rgba(103, 232, 249, 0.08) 0%, transparent 70%);
   color: #67e8f9;
   text-decoration: none;
   font-weight: 600;
@@ -259,8 +258,7 @@
   background-color: rgba(255, 255, 255, 0.05);
   padding: 1.25rem;
   box-shadow: 0 16px 60px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  
   transition-property: all;
   transition-duration: 300ms;
   height: 100%;

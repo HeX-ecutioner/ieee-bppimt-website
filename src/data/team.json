@@ -5,7 +5,7 @@
       "name": "Urba Das",
       "role": "Chairperson",
       "department": "Electronics & Communications Engineering",
-      "image": "/src/assets/pics/urba.jpeg",
+      "image": "/pics/urba.jpeg",
       "socials": {
         "linkedin": "#",
         "github": "#",
@@ -17,7 +17,7 @@
       "name": "Aman Jha",
       "role": "Vice Chairperson",
       "department": "Electronics & Communications Engineering",
-      "image": "/src/assets/pics/aman.jpeg",
+      "image": "/pics/aman.jpeg",
       "socials": {
         "linkedin": "#",
         "github": "#",
@@ -29,7 +29,7 @@
       "name": "Rittika Chatterjee",
       "role": "Secretary",
       "department": "Electronics & Communications Engineering",
-      "image": "/src/assets/pics/rittika.jpeg",
+      "image": "/pics/rittika.jpeg",
       "socials": {
         "linkedin": "#",
         "github": "#",
@@ -41,7 +41,7 @@
       "name": "Ushree Ghosh",
       "role": "Treasurer",
       "department": "Electronics & Communications Engineering",
-      "image": "/src/assets/pics/ushree.jpeg",
+      "image": "/pics/ushree.jpeg",
       "socials": {
         "linkedin": "#",
         "github": "#",
@@ -53,7 +53,7 @@
       "name": "Sagnik Maitra",
       "role": "Webmaster",
       "department": "Computer Science & Engineering",
-      "image": "/src/assets/pics/sagnik.jpeg",
+      "image": "/pics/sagnik.jpeg",
       "socials": {
         "linkedin": "#",
         "github": "#",
