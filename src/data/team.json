@@ -63,12 +63,34 @@
   ],
   "facultyAdvisors": [
     {
-      "id": "fs1",
-      "name": "Faculty Advisor Name",
-      "designation": "Branch Counselor",
-      "bio": "Guiding the student branch toward innovative technological breakthroughs.",
-      "image": "https://placehold.co/400x500",
-      "linkedin": "#"
+      "id": "ramesh",
+      "name": "Dr. Ramesh Kumar",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/ramesh.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": "proshanta",
+      "name": "Mr. Proshanta Sarkar",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/proshanta.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": "ankita",
+      "name": "Ms. Ankita Indu",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/ankita.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
     }
   ],
   "facultyMembers": [

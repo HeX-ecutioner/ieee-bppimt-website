@@ -25,10 +25,9 @@ type TeamMember = {
 type Advisor = {
     id: string;
     name: string;
-    designation: string;
-    bio: string;
+    department: string;
     image: string;
-    linkedin?: string;
+    socials?: SocialLinks;
 };
 
 // --- DATA ---
@@ -143,6 +142,37 @@ const CoreTeamCard = ({ member, className }: { member?: TeamMember, className: s
     );
 };
 
+const AdvisorCard = ({ advisor, index }: { advisor: Advisor, index: number }) => (
+    <motion.div
+        initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        whileHover={{ scale: 1.02 }}
+        className="team-advisor-card"
+    >
+        <div className="team-advisor-glow" />
+        <div className="team-advisor-image-frame">
+            <img src={advisor.image} alt={advisor.name} className="team-advisor-image" />
+        </div>
+        <div className="team-advisor-body">
+            <h3 className="team-advisor-name">{advisor.name}</h3>
+            <p className="team-advisor-designation">{advisor.department}</p>
+            <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '0.75rem', marginTop: '1.5rem' }}>
+                {(advisor.socials?.linkedin) && (
+                    <a href={advisor.socials.linkedin} target="_blank" rel="noreferrer" className="team-advisor-link">
+                        <Linkedin size={20} /> LinkedIn
+                    </a>
+                )}
+                {(advisor.socials?.email) && (
+                    <a href={`mailto:${advisor.socials.email}`} className="team-advisor-link" style={{ background: 'transparent', borderColor: 'rgba(255,255,255,0.2)' }}>
+                        <Mail size={20} /> Contact
+                    </a>
+                )}
+            </div>
+        </div>
+    </motion.div>
+);
+
 const CarouselCard = ({ member }: { member: TeamMember }) => (
     <div className="carousel-card">
         <div className="carousel-card-image-box">
@@ -158,29 +188,6 @@ const CarouselCard = ({ member }: { member: TeamMember }) => (
             {member.department && <p className="carousel-card-department">{member.department}</p>}
         </div>
     </div>
-);
-
-const AdvisorCard = ({ advisor, index }: { advisor: Advisor, index: number }) => (
-    <motion.div
-        initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: '-50px' }}
-        whileHover={{ scale: 1.02 }}
-        className="team-advisor-card"
-    >
-        <div className="team-advisor-glow" />
-        <div className="team-advisor-image-frame">
-            <img src={advisor.image} alt={advisor.name} className="team-advisor-image" />
-        </div>
-        <div className="team-advisor-body">
-            <h3 className="team-advisor-name">{advisor.name}</h3>
-            <p className="team-advisor-designation">{advisor.designation}</p>
-            <p className="team-advisor-bio">{advisor.bio}</p>
-            <a href={advisor.linkedin || '#'} target="_blank" rel="noreferrer" className="team-advisor-link">
-                <Linkedin className="team-advisor-link-icon" /> Connect on LinkedIn
-            </a>
-        </div>
-    </motion.div>
 );
 
 export default function Team() { 

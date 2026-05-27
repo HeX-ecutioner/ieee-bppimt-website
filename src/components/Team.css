@@ -4,7 +4,7 @@
   overflow: hidden;
   background: #001220; /* Very dark blue instead of plain black */
   color: #e2e8f0;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 
 .team-background {
@@ -91,7 +91,7 @@
 /* --- HEROIC CORE TEAM SECTION --- */
 .heroic-section {
   padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 
 .hero-text-center {
@@ -130,7 +130,7 @@
   justify-content: center;
   align-items: stretch;
   gap: 1.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 0rem;
   perspective: 1000px;
 }
 
@@ -389,14 +389,18 @@
 
 /* --- FACULTY ADVISORS --- */
 .team-list-advisors {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  max-width: 55rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 85rem;
   margin: 0 auto;
 }
 
 .team-advisor-card {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
   display: flex;
   flex-direction: column;
   background: rgba(15, 23, 42, 0.6);
@@ -409,14 +413,7 @@
   
 }
 
-@media (min-width: 640px) {
-  .team-advisor-card {
-    flex-direction: row;
-    align-items: center;
-    padding: 2.5rem;
-    gap: 3rem;
-  }
-}
+
 
 .team-advisor-card:hover {
   background: rgba(0, 98, 155, 0.15);
@@ -431,17 +428,11 @@
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid rgba(0, 181, 226, 0.3);
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem auto;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 640px) {
-  .team-advisor-image-frame {
-    width: 14rem;
-    height: 14rem;
-    margin-bottom: 0;
-  }
-}
+
 
 .team-advisor-image {
   width: 100%;
