@@ -60,14 +60,15 @@ const Footer = () => {
             >
               Become a Member
             </motion.a>
-            <button
-              type="button"
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="footer-cta-button"
             >
-              Back to top
+              Back to Top
               <ArrowUpRight className="footer-back-to-top-icon" />
-            </button>
+            </motion.a>
           </div>
         </div>
 
