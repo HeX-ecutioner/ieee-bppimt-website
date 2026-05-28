@@ -105,10 +105,16 @@
 }
 
 .footer-header-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .footer-header-title {
+    font-size: 1.5rem;
+  }
 }
 
 .footer-header-description {

@@ -57,7 +57,7 @@ const Hero = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#join"
+                href="https://www.ieee.org/membership/join/"
                 className="hero-btn-secondary"
               >
                 Join IEEE
@@ -68,7 +68,7 @@ const Hero = () => {
             {/* Social Icons */}
             <div className="hero-socials">
               {[
-                { icon: <FiLinkedin className="hero-icon" />, href: "#" },
+                { icon: <FiLinkedin className="hero-icon" />, href: "#https://www.linkedin.com/company/ieee-bppimt/?originalSubdomain=in" },
                 { icon: <FiInstagram className="hero-icon" />, href: "#" },
                 { icon: <FiGithub className="hero-icon" />, href: "#" },
                 { icon: <FiMail className="hero-icon" />, href: "#" }
