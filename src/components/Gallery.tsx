@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Image as ImageIcon, Sparkles } from 'lucide-react';
 import './Gallery.css';
@@ -88,6 +89,8 @@ const Gallery = () => {
                   src={item.image}
                   alt={item.title}
                   className="gallery-image"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="gallery-image-gradient" />
                 <div className="gallery-card-badge">
@@ -126,4 +129,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default React.memo(Gallery);

@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ChevronRight, Sparkles } from 'lucide-react';
 import branchLogo from '../assets/logos/branch-logo.svg';
@@ -95,6 +96,8 @@ const About = () => {
                   src={branchLogo}
                   alt="IEEE BPPIMT branch logo"
                   className="about-logo"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="about-stats">
                   <div className="about-stat-box-1">
@@ -130,4 +133,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default React.memo(About);

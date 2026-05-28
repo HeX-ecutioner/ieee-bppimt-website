@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, UserPlus } from 'lucide-react';
 import { FiLinkedin, FiInstagram, FiGithub, FiMail } from 'react-icons/fi';
@@ -13,10 +14,13 @@ const Hero = () => {
         
         {/* Full-bleed college image blended on the right */}
         <div className="hero-bg-image-wrapper">
-          <img 
-            src="/college.png" 
-            alt="BPPIMT College" 
+          <img
+            src="/college.png"
+            alt="BPPIMT College"
             className="hero-bg-image"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
           {/* Gradient to blend seamlessly into the left navy background */}
           <div className="hero-bg-gradient-1"></div>
@@ -89,4 +93,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default React.memo(Hero);

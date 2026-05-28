@@ -119,7 +119,7 @@ const CoreTeamCard = ({ member, className }: { member?: TeamMember, className: s
         >
             <div className="core-card-glow" />
             <div className="core-card-image-wrapper">
-                <img src={member.image} alt={member.name} className="core-card-image" />
+                <img src={member.image} alt={member.name} className="core-card-image" loading="lazy" decoding="async" />
                 <div className="core-card-overlay">
                     <div className="core-card-socials">
                         {(member.socials?.linkedin || true) && <SocialIconButton href={member.socials?.linkedin || '#'} icon={Linkedin} />}
@@ -152,7 +152,7 @@ const AdvisorCard = ({ advisor, index }: { advisor: Advisor, index: number }) =>
     >
         <div className="team-advisor-glow" />
         <div className="team-advisor-image-frame">
-            <img src={advisor.image} alt={advisor.name} className="team-advisor-image" />
+            <img src={advisor.image} alt={advisor.name} className="team-advisor-image" loading="lazy" decoding="async" />
         </div>
         <div className="team-advisor-body">
             <h3 className="team-advisor-name">{advisor.name}</h3>
@@ -176,7 +176,7 @@ const AdvisorCard = ({ advisor, index }: { advisor: Advisor, index: number }) =>
 const CarouselCard = ({ member }: { member: TeamMember }) => (
     <div className="carousel-card">
         <div className="carousel-card-image-box">
-            <img src={member.image} alt={member.name} className="carousel-card-image" />
+            <img src={member.image} alt={member.name} className="carousel-card-image" loading="lazy" decoding="async" />
             <div className="carousel-card-socials">
                 {(member.socials?.linkedin || true) && <SocialIconButton href={member.socials?.linkedin || '#'} icon={Linkedin} />}
                 {(member.socials?.github || true) && <SocialIconButton href={member.socials?.github || '#'} icon={Github} />}
@@ -190,7 +190,7 @@ const CarouselCard = ({ member }: { member: TeamMember }) => (
     </div>
 );
 
-export default function Team() { 
+function Team() { 
   // FIX 1: Safely handle CommonJS/ESM interop without upsetting TypeScript.
   // If Marquee is an object containing 'default', use that. Otherwise, use Marquee.
   const MarqueeComponent = (Marquee as any).default || Marquee;
@@ -323,3 +323,5 @@ export default function Team() {
     </div>
   );
 }
+
+export default React.memo(Team);

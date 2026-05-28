@@ -1,3 +1,4 @@
+import React from 'react'
 import { motion } from 'framer-motion'
 import { CalendarDays, Image as ImageIcon, MapPin, Users } from 'lucide-react'
 import './PastEvents.css'
@@ -102,6 +103,8 @@ const PastEvents = () => {
                     src={event.image}
                     alt={event.title}
                     className="past-event-image"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="past-event-image-gradient" />
                   <div className="past-event-date-badge">
@@ -135,4 +138,4 @@ const PastEvents = () => {
   )
 }
 
-export default PastEvents
+export default React.memo(PastEvents)

@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, ArrowRight } from 'lucide-react';
 import './Events.css';
@@ -96,10 +97,12 @@ const Events = () => {
             >
               {/* Image Container */}
               <div className="event-image-container">
-                <img 
-                  src={event.image} 
-                  alt={event.title} 
+                <img
+                  src={event.image}
+                  alt={event.title}
                   className="event-image"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="event-category-badge">
                   {event.category}
@@ -142,4 +145,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default React.memo(Events);

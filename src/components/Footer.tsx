@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, ArrowUpRight, Sparkles } from 'lucide-react';
@@ -81,7 +82,7 @@ const Footer = () => {
               className="footer-card"
             >
               <div className="footer-brand-header">
-                <img src="/favicon.svg" alt="IEEE BPPIMT" className="footer-brand-logo" />
+                <img src="/favicon.svg" alt="IEEE BPPIMT" className="footer-brand-logo" loading="lazy" decoding="async" />
                 <div className="footer-brand-text">
                   <span className="footer-brand-title">IEEE Student Branch</span>
                   <span className="footer-brand-subtitle">BPPIMT</span>
@@ -224,4 +225,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default React.memo(Footer);

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import bppimtLogo from '../assets/logos/bppimt.svg';
@@ -42,8 +42,8 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo-group">
-          <img src={bppimtLogo} alt="BPPIMT" className="navbar-logo" />
-          <img src="/favicon.svg" alt="IEEE icon" className="navbar-icon" />
+          <img src={bppimtLogo} alt="BPPIMT" className="navbar-logo" loading="lazy" decoding="async" />
+          <img src="/favicon.svg" alt="IEEE icon" className="navbar-icon" loading="lazy" decoding="async" />
           <div className="navbar-text-group">
             <span className="navbar-title">IEEE Student Branch</span>
             <span className="navbar-subtitle">B.P. Poddar Institute of Management & Technology</span>
@@ -66,6 +66,7 @@ const Navbar = () => {
           className="navbar-mobile-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle mobile menu"
+          aria-expanded={isMobileMenuOpen}
         >
           <svg className="navbar-mobile-toggle-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isMobileMenuOpen ? (
@@ -112,4 +113,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default React.memo(Navbar);

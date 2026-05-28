@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect, Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -6,8 +6,9 @@ import About from './components/About'
 import Events from './components/Events'
 import PastEvents from './components/PastEvents'
 import Footer from './components/Footer'
-import Team from './components/Team'
-import Gallery from './components/Gallery'
+// Lazy-load heavier route components to reduce initial bundle
+const Team = lazy(() => import('./components/Team'))
+const Gallery = lazy(() => import('./components/Gallery'))
 import './App.css'
 
 function Home() {
@@ -66,11 +67,13 @@ function App() {
         <ScrollManager />
         <Navbar />
         <main className="app-main">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/gallery" element={<Gallery />} />
-          </Routes>
+          <Suspense fallback={<div aria-live="polite" className="loading">Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/gallery" element={<Gallery />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>
