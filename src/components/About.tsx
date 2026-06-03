@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, ChevronRight, Sparkles } from 'lucide-react';
+import { CheckCircle2, ChevronRight } from 'lucide-react';
 import branchLogo from '../assets/logos/branch-logo.svg';
 import './About.css';
 
@@ -25,24 +25,19 @@ const About = () => {
       </div>
       <div className="about-container">
         <div className="about-grid">
-          
+
           {/* Left Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
             className="about-content-left"
           >
-            <div className="about-badge">
-              <Sparkles className="about-badge-icon" />
-              Who We Are
-            </div>
-            
             <h2 className="about-title">
               Empowering the Next Generation of <span className="about-title-highlight">Innovators</span>
             </h2>
-            
+
             <p className="about-description">
               The IEEE Student Branch at BPPIMT is dedicated to fostering technological innovation and excellence for the benefit of humanity. We provide a platform for students to learn, build, and grow together.
             </p>
@@ -62,11 +57,10 @@ const About = () => {
                 </li>
               ))}
             </ul>
-            
           </motion.div>
 
           {/* Right Visual */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -86,44 +80,38 @@ const About = () => {
               transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
               className="about-visual-glow-2"
             />
-            <div className="about-visual-gradient-bg" />
-            
+
             <div className="about-card">
-              <div className="about-card-radial" />
-              <div className="about-card-inner">
-              
-                <img
-                  src={branchLogo}
-                  alt="IEEE BPPIMT branch logo"
-                  className="about-logo"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="about-stats">
-                  <div className="about-stat-box-1">
-                    <p className="about-stat-label-1">Chapter focus</p>
-                    <p className="about-stat-value-1">Learning, building, connecting</p>
-                  </div>
-                  <div className="about-stat-box-2">
-                    <p className="about-stat-label-2">Visual identity</p>
-                    <p className="about-stat-value-2">Simple, bold, and technical</p>
-                  </div>
+              <img
+                src={branchLogo}
+                alt="IEEE BPPIMT branch logo"
+                className="about-logo"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="about-stats">
+                <div className="about-stat-box">
+                  <p className="about-stat-label">Chapter focus</p>
+                  <p className="about-stat-value">Learning, building, connecting</p>
+                </div>
+                <div className="about-stat-box">
+                  <p className="about-stat-label">Visual identity</p>
+                  <p className="about-stat-value">Simple, bold, and technical</p>
                 </div>
               </div>
-            </div>
-
-            <div className="about-learn-more-wrapper">
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#about"
-                className="about-learn-more group"
-              >
-                Learn more about our vision and mission
-                <div className="about-learn-more-icon-box">
-                  <ChevronRight className="about-learn-more-icon" />
-                </div>
-              </motion.a>
+              <div className="about-learn-more-wrapper">
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  href="/vision-mission"
+                  className="about-learn-more group"
+                >
+                  Learn more about our vision and mission
+                  <div className="about-learn-more-icon-box">
+                    <ChevronRight className="about-learn-more-icon" />
+                  </div>
+                </motion.a>
+              </div>
             </div>
 
           </motion.div>
