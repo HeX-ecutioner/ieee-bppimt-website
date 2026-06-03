@@ -1,5 +1,7 @@
 import { useEffect, Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { ArrowUp } from 'lucide-react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -10,7 +12,21 @@ import Footer from './components/Footer'
 const Team = lazy(() => import('./components/Team'))
 const Gallery = lazy(() => import('./components/Gallery'))
 const VisionMission = lazy(() => import('./components/VisionMission'))
-import './App.css'
+
+const appWrapperStyle = {
+  position: 'relative',
+  minHeight: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+  overflow: 'hidden',
+  backgroundColor: '#d9e6f3',
+} as const
+
+const appMainStyle = {
+  position: 'relative',
+  zIndex: 10,
+  flexGrow: 1,
+} as const
 
 function Home() {
   return (
@@ -36,8 +52,7 @@ function ScrollManager() {
         const headerOffset = headerElement?.getBoundingClientRect().height ?? 0
 
         if (targetId === 'footer') {
-          const footerTop = window.scrollY + targetElement.getBoundingClientRect().top
-          const top = Math.max(0, footerTop - headerOffset - 8)
+          const top = Math.max(0, document.documentElement.scrollHeight - window.innerHeight)
           requestAnimationFrame(() => {
             window.scrollTo({ top, behavior: 'smooth' })
           })
@@ -62,12 +77,16 @@ function ScrollManager() {
 }
 
 function App() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <Router>
-      <div className="app-wrapper">
+      <div style={appWrapperStyle}>
         <ScrollManager />
         <Navbar />
-        <main className="app-main">
+        <main style={appMainStyle}>
           <Suspense fallback={<div aria-live="polite" className="loading">Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -78,6 +97,17 @@ function App() {
           </Suspense>
         </main>
         <Footer />
+        <motion.button
+          type="button"
+          className="back-to-top-fab"
+          onClick={scrollToTop}
+          whileHover={{ y: -4, scale: 1.04 }}
+          whileTap={{ scale: 0.96 }}
+          aria-label="Back to top"
+          title="Back to top"
+        >
+          <ArrowUp aria-hidden="true" />
+        </motion.button>
       </div>
     </Router>
   )
