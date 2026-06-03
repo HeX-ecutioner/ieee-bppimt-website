@@ -1,0 +1,76 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "CodeSprint 2026",
+            "date": "OCT 15",
+            "isoDate": "2026-10-15",
+            "time": "09:00 AM - 05:00 PM",
+            "venue": "Main Auditorium, BPPIMT",
+            "description": "A 24-hour hackathon to build open-source solutions for smart campuses.",
+            "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
+            "category": "Hackathon",
+            "isUpcoming": false
+        },
+        {
+            "id": 2,
+            "title": "React Native Workshop",
+            "date": "NOV 18",
+            "isoDate": "2026-11-18",
+            "time": "10:00 AM - 01:00 PM",
+            "venue": "Lab 4, Block B",
+            "description": "Hands-on session building cross-platform mobile apps using React Native.",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
+            "category": "Workshop",
+            "isUpcoming": true
+        },
+        {
+            "id": 3,
+            "title": "IEEE Innovation Week",
+            "date": "APR 2026",
+            "isoDate": "2026-04-10",
+            "time": "10:00 AM - 04:00 PM",
+            "venue": "BPPIMT Campus",
+            "description": "A multi-day showcase of student projects, tech talks, and live demos from IEEE members.",
+            "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop",
+            "category": "Showcase",
+            "isUpcoming": false
+        },
+        {
+            "id": 4,
+            "title": "Hack the Future",
+            "date": "FEB 2026",
+            "isoDate": "2026-02-15",
+            "time": "08:00 AM - 08:00 PM",
+            "venue": "Main Auditorium",
+            "description": "An energetic hackathon focused on solving campus and community problems with practical prototypes.",
+            "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop",
+            "category": "Hackathon",
+            "isUpcoming": false
+        },
+        {
+            "id": 5,
+            "title": "Women in Tech Panel",
+            "date": "JAN 2026",
+            "isoDate": "2026-01-20",
+            "time": "02:00 PM - 05:00 PM",
+            "venue": "Seminar Hall",
+            "description": "A panel discussion featuring alumni and industry speakers sharing career stories and guidance.",
+            "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop",
+            "category": "Panel",
+            "isUpcoming": false
+        },
+        {
+            "id": 6,
+            "title": "IoT Workshop Day",
+            "date": "DEC 2025",
+            "isoDate": "2025-12-05",
+            "time": "11:00 AM - 03:00 PM",
+            "venue": "Lab Block B",
+            "description": "Hands-on sessions where participants built small IoT prototypes using sensors and microcontrollers.",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop",
+            "category": "Workshop",
+            "isUpcoming": false
+        }
+    ]
+}

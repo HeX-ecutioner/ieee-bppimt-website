@@ -1,144 +1,106 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Clock, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, CalendarDays, ArrowRight } from 'lucide-react';
 import './Events.css';
-
-const events = [
-  {
-    id: 1,
-    title: 'CodeSprint 2026',
-    date: 'OCT 15',
-    time: '09:00 AM - 05:00 PM',
-    venue: 'Main Auditorium, BPPIMT',
-    description: 'A 24-hour hackathon to build open-source solutions for smart campuses.',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop',
-    category: 'Hackathon'
-  },
-  {
-    id: 2,
-    title: 'Tech Talk: Future of AI',
-    date: 'NOV 02',
-    time: '02:00 PM - 04:00 PM',
-    venue: 'Virtual (Zoom)',
-    description: 'Join industry experts to discuss how AI is reshaping software engineering.',
-    image: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2070&auto=format&fit=crop',
-    category: 'Seminar'
-  },
-  {
-    id: 3,
-    title: 'React Native Workshop',
-    date: 'NOV 18',
-    time: '10:00 AM - 01:00 PM',
-    venue: 'Lab 4, Block B',
-    description: 'Hands-on session building cross-platform mobile apps using React Native.',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop',
-    category: 'Workshop'
-  }
-];
+import eventData from '../data/events.json';
 
 const Events = () => {
+  // Filter events based on the boolean flag
+  const { upcomingEvents, pastEvents } = useMemo(() => {
+    // Sort all events chronologically (Most recent first)
+    const sortedEvents = [...eventData.events].sort((a, b) => {
+      return new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime();
+    });
+
+    return {
+      upcomingEvents: sortedEvents.filter((e) => e.isUpcoming),
+      pastEvents: sortedEvents.filter((e) => !e.isUpcoming),
+    };
+  }, []);
+
   return (
-    <section id="events" className="events-section">
-      <div className="events-bgs">
-        <motion.div
-          aria-hidden="true"
-          animate={{ x: [0, 16, 0], y: [0, -10, 0], opacity: [0.14, 0.22, 0.14] }}
-          transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
-          className="events-glow-1"
-        />
-        <motion.div
-          aria-hidden="true"
-          animate={{ x: [0, -18, 0], y: [0, 12, 0], opacity: [0.12, 0.2, 0.12] }}
-          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-          className="events-glow-2"
-        />
-        <div className="events-bg-radial" />
+    <section id="events" className="events-viewport">
+      {/* Background Orbs for Glassmorphism contrast */}
+      <div className="events-bg-elements">
+        <div className="glow-orb orb-1" />
+        <div className="glow-orb orb-2" />
       </div>
-      <div className="events-container">
-        
-        {/* Header */}
-        <div className="events-header">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="events-header-content"
-          >
+
+      <div className="events-master-container">
+        {/* TOP HALF: Upcoming Events */}
+        <div className="upcoming-section">
+          <div className="section-header">
             <h2 className="events-title">
-              Upcoming <span className="events-title-highlight">Events</span>
+              Upcoming <span className="text-highlight">Events</span>
             </h2>
-            <p className="events-description">
-              Discover workshops, hackathons, and seminars designed to elevate your skills and network.
-            </p>
-          </motion.div>
-          
-          <motion.a 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            href="#events" 
-            className="events-view-all"
-          >
-            View All Events <ArrowRight className="events-view-all-icon" />
-          </motion.a>
+            <p className="events-subtitle">Register now for our latest programs and workshops.</p>
+          </div>
+
+          <div className="upcoming-content">
+            {upcomingEvents.length > 0 ? (
+              upcomingEvents.map((event) => (
+                <motion.div
+                  key={event.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="glass-card upcoming-card"
+                >
+                  <div className="upcoming-image-box">
+                    <img src={event.image} alt={event.title} loading="lazy" />
+                    <span className="category-badge">{event.category}</span>
+                  </div>
+                  <div className="upcoming-details">
+                    <h3>{event.title}</h3>
+                    <p>{event.description}</p>
+                    <div className="meta-info">
+                      <span><CalendarDays size={16} /> {event.date}</span>
+                      <span><Clock size={16} /> {event.time}</span>
+                      <span><MapPin size={16} /> {event.venue}</span>
+                    </div>
+                    <button className="register-btn">Register Now <ArrowRight size={16} /></button>
+                  </div>
+                </motion.div>
+              ))
+            ) : (
+              // Empty State for no upcoming events
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="glass-card empty-state"
+              >
+                <div className="empty-state-content">
+                  <h3>More Events Coming Soon!</h3>
+                  <p>We are brewing something awesome behind the scenes. Stay tuned to our socials for the next drop.</p>
+                </div>
+              </motion.div>
+            )}
+          </div>
         </div>
 
-        {/* Cards Grid */}
-        <div className="events-grid">
-          {events.map((event, index) => (
-            <motion.div 
-              key={event.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              whileHover={{ y: -8 }}
-              className="event-card group"
-            >
-              {/* Image Container */}
-              <div className="event-image-container">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="event-image"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className="event-category-badge">
-                  {event.category}
-                </div>
-              </div>
-              
-              {/* Content */}
-              <div className="event-content">
-                {/* Date Badge */}
-                <div className="event-date-title-group">
-                  <div className="event-date-badge">
-                    <span className="event-date-month">{event.date.split(' ')[0]}</span>
-                    <span className="event-date-day">{event.date.split(' ')[1]}</span>
-                  </div>
-                  <div>
-                    <h3 className="event-card-title">{event.title}</h3>
+        {/* BOTTOM HALF: Past Events (Horizontal Scroll) */}
+        <div className="past-section">
+          <div className="section-header past-header">
+            <h2 className="events-title past-title">
+              Past <span className="text-highlight">Memories</span>
+            </h2>
+          </div>
+
+          <div className="horizontal-scroll-container">
+            {pastEvents.map((event) => (
+              <motion.div
+                key={event.id}
+                whileHover={{ scale: 0.98 }}
+                className="glass-card past-card"
+              >
+                <div className="past-card-bg" style={{ backgroundImage: `url(${event.image})` }}>
+                  <div className="past-card-overlay">
+                    <h4>{event.title}</h4>
+                    <span className="past-date">{event.date}</span>
                   </div>
                 </div>
-                
-                <p className="event-card-description">
-                  {event.description}
-                </p>
-                
-                <div className="event-details">
-                  <div className="event-detail-item">
-                    <Clock className="event-detail-icon" />
-                    {event.time}
-                  </div>
-                  <div className="event-detail-item">
-                    <MapPin className="event-detail-icon" />
-                    {event.venue}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

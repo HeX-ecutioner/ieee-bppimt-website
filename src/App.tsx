@@ -6,7 +6,6 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Events from './components/Events'
-import PastEvents from './components/PastEvents'
 import Footer from './components/Footer'
 // Lazy-load heavier route components to reduce initial bundle
 const Team = lazy(() => import('./components/Team'))
@@ -34,7 +33,6 @@ function Home() {
       <Hero />
       <About />
       <Events />
-      <PastEvents />
     </>
   )
 }
