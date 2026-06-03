@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense, lazy } from 'react'
+import { useEffect, Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 // Lazy-load heavier route components to reduce initial bundle
 const Team = lazy(() => import('./components/Team'))
 const Gallery = lazy(() => import('./components/Gallery'))
+const VisionMission = lazy(() => import('./components/VisionMission'))
 import './App.css'
 
 function Home() {
@@ -43,7 +44,7 @@ function ScrollManager() {
           return
         }
 
-        const extraOffset = 0
+        const extraOffset = targetId === 'about' ? -16 : 0
         const targetTop = window.scrollY + targetElement.getBoundingClientRect().top - headerOffset - extraOffset
 
         requestAnimationFrame(() => {
@@ -72,6 +73,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/team" element={<Team />} />
               <Route path="/gallery" element={<Gallery />} />
+              <Route path="/vision-mission" element={<VisionMission />} />
             </Routes>
           </Suspense>
         </main>
