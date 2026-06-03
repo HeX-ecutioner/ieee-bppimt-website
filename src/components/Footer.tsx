@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Mail, MapPin, Phone, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Mail, MapPin, Phone, Sparkles } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -38,15 +38,12 @@ const Footer = () => {
 
       <div className="footer-container">
         <div className="footer-header">
-          <div className="footer-header-text-container">
+          <div>
             <p className="footer-header-badge">
-              <Sparkles className="footer-header-icon" />
+              <Sparkles style={{ height: '1rem', width: '1rem' }} />
               Be a Part of Something Great
             </p>
-            <h3 className="footer-header-title">
-              Wanna join us?
-            </h3>
-            <p className="footer-header-description">
+            <p style={{ color: '#d4deed' }}>
               Join a global network of professionals and students. Empower your career, build projects, and make a real impact.
             </p>
           </div>
@@ -60,15 +57,6 @@ const Footer = () => {
               className="footer-cta-button"
             >
               Become a Member
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="footer-cta-button"
-            >
-              Back to Top
-              <ArrowUpRight className="footer-back-to-top-icon" />
             </motion.a>
           </div>
         </div>
@@ -217,6 +205,7 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} IEEE Student Branch BPPIMT. All rights reserved.</p>
           <div className="footer-bottom-links">
             <a href="https://bppimt.ac.in/privacy-policy/" className="footer-bottom-link">Privacy Policy</a>
+            <a href="https://ieee-bppimt.netlify.app/" className="footer-bottom-link">Previous IEEE Website</a>
             <a href="https://bppimt.ac.in/" className="footer-bottom-link">College Website</a>
           </div>
         </div>
