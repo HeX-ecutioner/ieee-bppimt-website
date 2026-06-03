@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, UserPlus } from 'lucide-react';
-import { FiLinkedin, FiInstagram, FiGithub, FiMail } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
@@ -69,23 +68,6 @@ const Hero = () => {
               </motion.a>
             </div>
 
-            {/* Social Icons */}
-            <div className="hero-socials">
-              {[
-                { icon: <FiLinkedin className="hero-icon" />, href: "#https://www.linkedin.com/company/ieee-bppimt/?originalSubdomain=in" },
-                { icon: <FiInstagram className="hero-icon" />, href: "#" },
-                { icon: <FiGithub className="hero-icon" />, href: "#" },
-                { icon: <FiMail className="hero-icon" />, href: "#" }
-              ].map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.href}
-                  className="hero-social-link"
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>
