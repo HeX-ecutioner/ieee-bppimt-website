@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 const Team = lazy(() => import('./components/Team'))
 const Gallery = lazy(() => import('./components/Gallery'))
 const VisionMission = lazy(() => import('./components/VisionMission'))
+const Contact = lazy(() => import('./components/Contact'))
 
 const appWrapperStyle = {
   position: 'relative',
@@ -91,6 +92,7 @@ function App() {
               <Route path="/team" element={<Team />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/vision-mission" element={<VisionMission />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>
         </main>

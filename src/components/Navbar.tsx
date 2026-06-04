@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'Events', href: '/#events' },
     { name: 'Team', href: '/team' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/#footer' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const NavLink = ({
@@ -42,8 +42,8 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-logo-group">
-          <img src={bppimtLogo} alt="BPPIMT" className="navbar-logo" loading="lazy" decoding="async" />
-          <img src="/favicon.svg" alt="IEEE icon" className="navbar-icon" loading="lazy" decoding="async" />
+          <Link to="/"><img src={bppimtLogo} alt="BPPIMT" className="navbar-logo" loading="lazy" decoding="async" /></Link>
+          <Link to="/"><img src="/favicon.svg" alt="IEEE icon" className="navbar-icon" loading="lazy" decoding="async" /></Link>
           <div className="navbar-text-group">
             <span className="navbar-title">IEEE Student Branch</span>
             <span className="navbar-subtitle">B.P. Poddar Institute of Management & Technology</span>

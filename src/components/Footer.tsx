@@ -9,9 +9,9 @@ const Footer = () => {
     { label: 'Home', to: '/' },
     { label: 'About', to: '/#about' },
     { label: 'Events', to: '/#events' },
-    { label: 'Past Events', to: '/#past-events' },
     { label: 'Gallery', to: '/gallery' },
     { label: 'Our Team', to: '/team' },
+    { label: 'Contact Us', to: '/contact' },
   ];
 
   const socialLinks = [
@@ -159,7 +159,7 @@ const Footer = () => {
             </motion.div>
           </div>
 
-          {/* Contact */}
+          {/* College Info */}
           <div>
             <motion.div
               whileHover={{ y: -4 }}
@@ -167,7 +167,7 @@ const Footer = () => {
             >
               <h4 className="footer-card-title">
                 <span className="footer-card-title-indicator"></span>
-                <span className="footer-card-title-text">Contact Us</span>
+                <span className="footer-card-title-text">College Info</span>
               </h4>
               <ul className="footer-contact-list">
                 <li className="footer-contact-item">
