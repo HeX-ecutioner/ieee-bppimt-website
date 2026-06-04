@@ -1,7 +1,7 @@
 ﻿{
   "coreTeam": [
     {
-      "id": "urba",
+      "id": 3,
       "name": "Urba Das",
       "role": "Chairperson",
       "department": "Electronics & Communications Engineering",
@@ -13,7 +13,7 @@
       }
     },
     {
-      "id": "aman",
+      "id": 4,
       "name": "Aman Jha",
       "role": "Vice Chairperson",
       "department": "Electronics & Communications Engineering",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "id": "rittika",
+      "id": 2,
       "name": "Rittika Chatterjee",
       "role": "Secretary",
       "department": "Electronics & Communications Engineering",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "id": "ushree",
+      "id": 1,
       "name": "Ushree Ghosh",
       "role": "Treasurer",
       "department": "Electronics & Communications Engineering",
@@ -49,11 +49,23 @@
       }
     },
     {
-      "id": "sagnik",
+      "id": 5,
       "name": "Sagnik Maitra",
       "role": "Webmaster",
       "department": "Computer Science & Engineering",
       "image": "/pics/sagnik.jpeg",
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/sagnikmaitra",
+        "github": "https://github.com/HeX-ecutioner",
+        "email": "mailto:sagnikmaitra01@gmail.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ishika Chowdhury",
+      "role": "Core Member",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/ishika.jpeg",
       "socials": {
         "linkedin": "#",
         "github": "#",
@@ -61,10 +73,11 @@
       }
     }
   ],
-  "facultyAdvisors": [
+  "facultyMentors": [
     {
-      "id": "ramesh",
+      "id": 1,
       "name": "Dr. Ramesh Kumar",
+      "role": "Counselor",
       "department": "Electronics & Communications Engineering",
       "image": "/pics/ramesh.jpeg",
       "socials": {
@@ -73,8 +86,9 @@
       }
     },
     {
-      "id": "proshanta",
+      "id": 2,
       "name": "Mr. Proshanta Sarkar",
+      "role": "Faculty Advisor",
       "department": "Computer Science & Engineering",
       "image": "/pics/proshanta.jpeg",
       "socials": {
@@ -83,8 +97,9 @@
       }
     },
     {
-      "id": "ankita",
+      "id": 3,
       "name": "Ms. Ankita Indu",
+      "role": "Faculty Advisor",
       "department": "Electronics & Communications Engineering",
       "image": "/pics/ankita.jpeg",
       "socials": {
@@ -95,75 +110,324 @@
   ],
   "facultyMembers": [
     {
-      "id": "fm1",
-      "name": "Faculty Member 1",
-      "role": "Mentor",
-      "department": "ECE",
-      "image": "https://placehold.co/300x400",
+      "id": 1,
+      "name": "Dr. Nabanita Das",
+      "role": "Senior Member",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/nabanita.jpeg",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "email": "#"
       }
     },
     {
-      "id": "fm2",
-      "name": "Faculty Member 2",
-      "role": "Mentor",
-      "department": "CSE",
-      "image": "https://placehold.co/300x400",
+      "id": 2,
+      "name": "Prof. Dr. Sutapa Mukherjee",
+      "role": "Member",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/sutapa.jpeg",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "email": "#"
       }
     },
     {
-      "id": "fm3",
-      "name": "Faculty Member 3",
-      "role": "Mentor",
-      "department": "IT",
-      "image": "https://placehold.co/300x400",
+      "id": 3,
+      "name": "Dr. Ananya Kanjilal",
+      "role": "Member",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/ananya.jpeg",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dr. Nandita Sanyal",
+      "role": "Member",
+      "department": "Electrical Engineering",
+      "image": "/pics/nandita.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Dr. Bikromadittya Mondal",
+      "role": "Member",
+      "department": "Artificial Intelligence & Machine Learning",
+      "image": "/pics/bikromadittya.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Dr. Jayeeta Chanda",
+      "role": "Member",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/jayeeta.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Dr. Susmita Dey",
+      "role": "Member",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/susmita.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Dr. Arijit Dey",
+      "role": "Member",
+      "department": "Computer Applications",
+      "image": "/pics/arijit.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Mr. Subhasish Das",
+      "role": "Member",
+      "department": "Electrical Engineering",
+      "image": "/pics/subhasish.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
       }
     }
   ],
   "studentMembers": [
     {
-      "id": "sm1",
-      "name": "Student Member 1",
-      "role": "Member",
-      "department": "ECE",
-      "image": "https://placehold.co/300x400",
+      "id": 1,
+      "name": "Sneha Patra",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
       }
     },
     {
-      "id": "sm2",
-      "name": "Student Member 2",
-      "role": "Member",
-      "department": "CSE",
-      "image": "https://placehold.co/300x400",
+      "id": 2,
+      "name": "Urna Banerjee",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
       }
     },
     {
-      "id": "sm3",
-      "name": "Student Member 3",
-      "role": "Member",
-      "department": "IT",
-      "image": "https://placehold.co/300x400",
+      "id": 3,
+      "name": "Sukanya Sarkar",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
       }
     },
     {
-      "id": "sm4",
-      "name": "Student Member 4",
-      "role": "Member",
-      "department": "EE",
-      "image": "https://placehold.co/300x400",
+      "id": 4,
+      "name": "Kanakanjali Chatterjee",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#"
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Ayantika Das",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Annwtika Pal",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Anshuman Guha",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Kritiban Kamliya",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Swastika Biswas",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Susanta Sarkar",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Subhajit Jha",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Subhajit Guin",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Jit Kundu",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Soheli Panda",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Meghali Dutta",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Abir Shee",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Sagnik Maitra",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Ahana Maiti",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Rituja Ganguly",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Ishita Mazumder",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
       }
     }
   ]

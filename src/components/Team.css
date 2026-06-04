@@ -85,7 +85,7 @@
 .team-section {
   width: min(100%, 85rem);
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 /* --- HEROIC CORE TEAM SECTION --- */
@@ -127,11 +127,19 @@
 /* DESKTOP CORE TEAM LAYOUT */
 .core-team-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 0rem;
+  perspective: 1000px;
+}
+
+.core-team-row {
+  display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 1.5rem;
-  padding-bottom: 0rem;
-  perspective: 1000px;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -362,7 +370,7 @@
 
 .team-section-heading {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .team-section-title {
@@ -383,7 +391,7 @@
 .team-section-subtitle {
   color: #94a3b8;
   font-size: 1.15rem;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -456,13 +464,19 @@
   margin: 0 0 0.5rem;
 }
 
-.team-advisor-designation {
+.team-advisor-role {
   font-size: 1.15rem;
   color: #00B5E2;
   font-weight: 600;
-  margin: 0 0 1rem;
+  margin: 0 0 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.team-advisor-designation {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin: 0 0 1.25rem;
 }
 
 .team-advisor-bio {
@@ -498,7 +512,7 @@
 .carousel-wrapper {
   mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .carousel-card {
@@ -584,4 +598,101 @@
   color: #94a3b8;
   font-size: 0.8rem;
   margin: 0;
+}
+
+/* --- DRAGGABLE SCROLL CONTAINER --- */
+.draggable-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  cursor: grab;
+  user-select: none;
+}
+.draggable-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.draggable-scroll-container.active {
+  cursor: grabbing;
+}
+.draggable-scroll-container > * {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+/* --- STUDENT GRID --- */
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  padding: 0 0 1rem 0;
+}
+
+.student-card {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.student-card:hover {
+  background: rgba(0, 98, 155, 0.15);
+  border-color: rgba(0, 181, 226, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.student-card-name {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.student-card-society {
+  color: #00B5E2;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+  text-transform: uppercase;
+}
+
+.student-card-dept {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin: 0 0 1rem;
+}
+
+.student-card-socials {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.student-card-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.student-card-socials a:hover {
+  background: #00B5E2;
+  color: #001220;
+  border-color: #00B5E2;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 181, 226, 0.3);
 }
