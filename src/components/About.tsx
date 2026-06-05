@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ChevronRight } from 'lucide-react';
-import './About.css';
+import './styles/About.css';
 
 const About = () => {
   return (

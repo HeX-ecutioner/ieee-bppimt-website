@@ -3,7 +3,7 @@ import { motion, type Variants } from 'framer-motion';
 import { Mail, GraduationCap } from 'lucide-react';
 import { FiLinkedin as Linkedin, FiGithub as Github } from 'react-icons/fi';
 import teamData from '../data/team.json';
-import './Team.css';
+import './styles/Team.css';
 
 type SocialLinksType = { linkedin?: string; github?: string; email?: string; scholar?: string; };
 type TeamMember = { id: number; name: string; role?: string; society?: string; department?: string; image?: string; socials?: SocialLinksType; };

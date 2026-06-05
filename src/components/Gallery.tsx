@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { galleryItems } from '../data/gallery.json';
-import './Gallery.css';
+import './styles/Gallery.css';
 
 const Gallery = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, Sparkles } from 'lucide-react';
-import './Footer.css';
+import './styles/Footer.css';
 
 const Footer = () => {
   const quickLinks = [

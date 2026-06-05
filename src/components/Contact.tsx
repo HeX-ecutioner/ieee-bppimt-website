@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Check, AlertCircle, Sparkles } from 'lucide-react';
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
 import emailjs from '@emailjs/browser';
-import './Contact.css';
+import './styles/Contact.css';
 
 // Get EmailJS config from env variables
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || '';
@@ -47,7 +47,7 @@ export default function Contact() {
         'EmailJS variables are missing in .env. Mocking request success for development. ' +
         'Please add VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY to your env configuration.'
       );
-      
+
       setTimeout(() => {
         setStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
@@ -105,7 +105,7 @@ export default function Contact() {
       <div className="contact-container">
         {/* Header */}
         <div className="contact-header">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="contact-badge"
@@ -236,8 +236,8 @@ export default function Contact() {
                   </div>
                   <h3>Message Sent!</h3>
                   <p>Thank you for reaching out. We will get back to you as soon as possible.</p>
-                  <button 
-                    onClick={() => setStatus('idle')} 
+                  <button
+                    onClick={() => setStatus('idle')}
                     className="send-another-btn"
                   >
                     Send Another Message

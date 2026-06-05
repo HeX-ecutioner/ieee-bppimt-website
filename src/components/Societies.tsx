@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import societiesData from '../data/societies.json';
 const societies = societiesData.societies;
-import './Societies.css';
+import './styles/Societies.css';
 
 const Societies = () => {
   return (

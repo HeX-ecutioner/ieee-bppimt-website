@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Target, Eye } from 'lucide-react';
-import './VisionMission.css';
+import './styles/VisionMission.css';
 
 const VisionMission = () => {
   return (
@@ -33,7 +33,7 @@ const VisionMission = () => {
 
         <div className="vision-grid">
           {/* Vision Box */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -49,7 +49,7 @@ const VisionMission = () => {
           </motion.div>
 
           {/* Mission Box */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.18 }}

@@ -1,13 +1,11 @@
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, CalendarDays, ArrowRight } from 'lucide-react';
-import './Events.css';
 import eventData from '../data/events.json';
+import './styles/Events.css';
 
-const Events = () => {
-  // Filter events based on the boolean flag
-  const { upcomingEvents, pastEvents } = useMemo(() => {
-    // Sort all events chronologically (Most recent first)
+const Events = () => { // Filter events based on the boolean flag
+  const { upcomingEvents, pastEvents } = useMemo(() => { // Sort all events chronologically (Most recent first)
     const sortedEvents = [...eventData.events].sort((a, b) => {
       return new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime();
     });
