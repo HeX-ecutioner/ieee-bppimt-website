@@ -1,0 +1,64 @@
+{
+    "galleryItems": [
+        {
+            "title": "Image Generation Workshop",
+            "description": "Hands-on workshop exploring AI-powered image generation tools and creative workflows.",
+            "image": "/gallery/1.jpg"
+        },
+        {
+            "title": "Student Branch Inauguration",
+            "description": "Official inauguration ceremony of the IEEE Student Branch for the 2023 session.",
+            "image": "/gallery/2.jpg"
+        },
+        {
+            "title": "Lunar Seminar",
+            "description": "An insightful seminar discussing lunar exploration, space technology, and future missions.",
+            "image": "/gallery/3.jpg"
+        },
+        {
+            "title": "Interactive Workshop",
+            "description": "Students collaborating in interactive sessions focused on innovation and problem-solving.",
+            "image": "/gallery/4.jpg"
+        },
+        {
+            "title": "Coding Challenge",
+            "description": "An exciting competitive programming event testing coding and analytical skills.",
+            "image": "/gallery/5.jpg"
+        },
+        {
+            "title": "Felicitation of Lecturer",
+            "description": "Honoring the guest lecturer for sharing valuable knowledge and technical expertise.",
+            "image": "/gallery/6.jpg"
+        },
+        {
+            "title": "ISRO Collaboration",
+            "description": "A collaborative initiative highlighting student engagement with ISRO-related projects and research.",
+            "image": "/gallery/7.jpg"
+        },
+        {
+            "title": "Interactive Session",
+            "description": "An engaging session encouraging discussions, networking, and idea exchange among members.",
+            "image": "/gallery/8.jpg"
+        },
+        {
+            "title": "Students and Faculty",
+            "description": "Students and faculty members coming together to strengthen academic and professional connections.",
+            "image": "/gallery/9.jpg"
+        },
+        {
+            "title": "Senior Members",
+            "description": "A memorable gathering celebrating the contributions and achievements of senior members.",
+            "image": "/gallery/10.jpg"
+        },
+        {
+            "title": "Felicitation of Chief Guest",
+            "description": "A special moment dedicated to honoring the chief guest for their inspiring presence and guidance.",
+            "image": "/gallery/11.jpg"
+        },
+        {
+            "title": "Online-Offline Interaction",
+            "description": "A hybrid interaction session connecting participants through both online and offline engagement.",
+            "image": "/gallery/12.jpg"
+        }
+    ]
+}
