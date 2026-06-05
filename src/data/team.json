@@ -129,7 +129,7 @@
     {
       "id": 1,
       "name": "Dr. Nabanita Das",
-      "role": "Senior Member",
+      "role": "Chairperson, IEEE SIGHT",
       "department": "Computer Science & Engineering",
       "image": "/pics/nabanita.jpeg",
       "socials": {
@@ -311,17 +311,6 @@
     },
     {
       "id": 6,
-      "name": "Annwtika Pal",
-      "society": "Microwave Theory and Technology Society",
-      "department": "Electronics & Communications Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
-    },
-    {
-      "id": 7,
       "name": "Anshuman Guha",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
@@ -332,7 +321,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Kritiban Kamliya",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
@@ -343,7 +332,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Swastika Biswas",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
@@ -354,7 +343,7 @@
       }
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Susanta Sarkar",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
@@ -365,7 +354,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 10,
       "name": "Subhajit Jha",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
@@ -376,7 +365,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 11,
       "name": "Subhajit Guin",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
@@ -387,7 +376,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "Jit Kundu",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
@@ -398,7 +387,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "Soheli Panda",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
@@ -409,8 +398,19 @@
       }
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "Meghali Dutta",
+      "society": "Communications Society",
+      "department": "Computer Science & Engineering",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Ishita Mazumder",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
       "socials": {
@@ -444,17 +444,6 @@
     {
       "id": 18,
       "name": "Rituja Ganguly",
-      "society": "Communications Society",
-      "department": "Computer Science & Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
-    },
-    {
-      "id": 19,
-      "name": "Ishita Mazumder",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
       "socials": {
