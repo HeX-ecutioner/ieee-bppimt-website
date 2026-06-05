@@ -9,31 +9,23 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
     { name: 'Events', href: '/#events' },
+    { name: 'Societies', href: '/societies' },
+    { name: 'About', href: '/#about' },
     { name: 'Team', href: '/team' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Contact', href: '/contact' }
   ];
 
-  const NavLink = ({
-    name,
-    href,
-    mobile = false,
-  }: {
-    name: string;
-    href: string;
-    mobile?: boolean;
-  }) => (
+  const NavLink = ({ name, href, mobile = false }: { name: string; href: string; mobile?: boolean }) => (
     <Link
       to={href}
       onClick={() => mobile && setIsMobileMenuOpen(false)}
-      className={`nav-link ${mobile ? 'nav-link-mobile' : 'nav-link-desktop'}`}
+      className="nav-link"
+      style={{ fontSize: mobile ? '1rem' : '0.875rem' }}
     >
       <span>{name}</span>
-      <span className="nav-link-underline-wrapper">
-        <span className="nav-link-underline" />
-      </span>
+      <span className="nav-link-underline" />
     </Link>
   );
 
@@ -52,13 +44,7 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <nav className="navbar-desktop-nav">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.name}
-              name={link.name}
-              href={link.href}
-            />
-          ))}
+          {navLinks.map((link) => <NavLink key={link.name} {...link} />)}
         </nav>
 
         {/* Mobile menu toggle */}
@@ -66,9 +52,8 @@ const Navbar = () => {
           className="navbar-mobile-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle mobile menu"
-          aria-expanded={isMobileMenuOpen}
         >
-          <svg className="navbar-mobile-toggle-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg style={{ width: '1.5rem', height: '1.5rem' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -88,19 +73,17 @@ const Navbar = () => {
             transition={{ duration: 0.2 }}
             className="navbar-mobile-menu"
           >
-            <div className="navbar-mobile-content">
-              {navLinks.map((link) => (
-                <NavLink
-                  key={link.name}
-                  name={link.name}
-                  href={link.href}
-                  mobile
-                />
-              ))}
-              <div className="navbar-mobile-join-wrapper">
+            <div style={{ padding: '1rem 1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {navLinks.map((link) => <NavLink key={link.name} {...link} mobile />)}
+              <div style={{ paddingTop: '1rem', borderTop: '1px solid #f1f5f9' }}>
                 <a
                   href="#join"
-                  className="navbar-mobile-join-btn"
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem',
+                    width: '100%', padding: '0.75rem 1.25rem', borderRadius: '0.75rem',
+                    backgroundColor: 'var(--color-ieee-blue)', color: 'white',
+                    fontSize: '1rem', fontWeight: 700, textDecoration: 'none'
+                  }}
                 >
                   Join IEEE
                 </a>
