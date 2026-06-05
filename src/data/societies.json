@@ -1,0 +1,31 @@
+{
+    "societies": [
+        {
+            "id": "comsoc",
+            "name": "IEEE Communications Society (ComSoc)",
+            "shortName": "ComSoc",
+            "description": "Promoting the advancement of science, technology and applications in communications and related disciplines.",
+            "logo": "/logos/ieee-comsoc.svg",
+            "link": "https://www.comsoc.org/",
+            "color": "#00629b"
+        },
+        {
+            "id": "mtts",
+            "name": "IEEE Microwave Theory and Technology Society (MTT-S)",
+            "shortName": "MTT-S",
+            "description": "Promoting the advancement of microwave theory and its applications, including RF, microwave, millimeter-wave, and terahertz technologies.",
+            "logo": "/logos/ieee-mtt-s.svg",
+            "link": "https://mtt.org/",
+            "color": "#0a192f"
+        },
+        {
+            "id": "eds",
+            "name": "IEEE Electron Devices Society (EDS)",
+            "shortName": "EDS",
+            "description": "To foster professional growth and advance the fields of electron and ion devices, encompassing all related technologies.",
+            "logo": "/logos/ieee-eds.svg",
+            "link": "https://eds.ieee.org/",
+            "color": "#00629b"
+        }
+    ]
+}

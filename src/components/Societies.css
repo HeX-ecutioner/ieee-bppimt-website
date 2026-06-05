@@ -1,0 +1,225 @@
+.societies-section {
+  padding: 8rem 1.5rem 6rem;
+  background-color: var(--color-page-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.societies-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 80% -20%, rgba(103, 232, 249, 0.15), transparent 50%),
+              radial-gradient(circle at -20% 50%, rgba(0, 98, 155, 0.08), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.societies-container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.societies-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.societies-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--color-ieee-navy);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.societies-title span {
+  color: transparent;
+  background: linear-gradient(135deg, var(--color-ieee-blue), #0ea5e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.societies-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.societies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 3rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.society-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0 20px 40px rgba(10, 25, 47, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.society-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--soc-color, var(--color-ieee-blue));
+  opacity: 0.8;
+  transition: height 0.3s ease;
+  z-index: 10;
+}
+
+.society-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(10, 25, 47, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.society-card:hover::before {
+  height: 10px;
+}
+
+.society-logo-billboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.society-logo {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.06));
+}
+
+.society-card:hover .society-logo {
+  transform: scale(1.1);
+}
+
+.society-content-wrapper {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.society-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.society-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-ieee-navy);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.society-full-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-ieee-blue);
+  margin: 0 0 1.5rem;
+  line-height: 1.4;
+}
+
+.society-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0 0 2.5rem;
+}
+
+.society-action {
+  margin-top: auto;
+  width: max-content;
+}
+
+.society-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--color-ieee-light);
+  color: var(--color-ieee-navy);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.society-link svg {
+  transition: transform 0.3s ease;
+}
+
+.society-link:hover {
+  background: var(--color-ieee-blue);
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 98, 155, 0.2);
+}
+
+.society-link:hover svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .societies-section {
+    padding: 6rem 1rem 4rem;
+  }
+  
+  .societies-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .society-name {
+    font-size: 2rem;
+  }
+  
+  .society-content-wrapper {
+    padding: 2rem 1.5rem;
+  }
+  
+  .society-logo-billboard {
+    padding: 3rem 1.5rem;
+  }
+  
+  .society-logo {
+    height: 180px;
+  }
+}
