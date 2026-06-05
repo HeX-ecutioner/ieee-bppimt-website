@@ -2,7 +2,7 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: #001220; /* Matching website dark blue theme */
+  background: #001220;
   color: #e2e8f0;
   padding: 8rem 1.5rem 6rem;
   display: flex;
@@ -50,8 +50,7 @@
 .contact-background-grid {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px), 
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 4rem 4rem;
   mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 40%, transparent 100%);
@@ -116,7 +115,6 @@
   margin: 0;
 }
 
-/* MAIN GRID */
 .contact-grid {
   display: grid;
   grid-template-columns: 1.1fr 1.3fr;
@@ -130,8 +128,8 @@
   }
 }
 
-/* INFO CARD */
-.contact-info-card {
+.contact-info-card,
+.contact-form-card {
   background: rgba(15, 23, 42, 0.65);
   border: 1px solid rgba(0, 181, 226, 0.15);
   border-radius: 1.5rem;
@@ -139,29 +137,56 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.01);
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
   position: relative;
   overflow: hidden;
 }
 
-.contact-info-card::before {
+.contact-info-card {
+  gap: 1.75rem;
+}
+
+.contact-form-card {
+  justify-content: center;
+}
+
+.contact-info-card::before,
+.contact-form-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.contact-info-card::before {
   width: 3px;
   height: 100%;
   background: linear-gradient(to bottom, #00B5E2, #00629B);
 }
 
-.info-glow {
+.contact-form-card::before {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00B5E2, #00629B);
+}
+
+.info-glow,
+.form-glow {
   position: absolute;
-  top: -20%;
-  right: -20%;
   width: 60%;
   height: 60%;
-  background: radial-gradient(circle, rgba(0, 181, 226, 0.08) 0%, transparent 70%);
   pointer-events: none;
+}
+
+.info-glow {
+  top: -20%;
+  right: -20%;
+  background: radial-gradient(circle, rgba(0, 181, 226, 0.08) 0%, transparent 70%);
+}
+
+.form-glow {
+  bottom: -20%;
+  left: -20%;
+  background: radial-gradient(circle, rgba(0, 98, 155, 0.08) 0%, transparent 70%);
 }
 
 .info-title {
@@ -231,7 +256,6 @@
   text-decoration: underline;
 }
 
-/* MAP WRAPPER */
 .info-map-wrapper {
   width: 100%;
   height: 200px;
@@ -247,7 +271,6 @@
   border: none;
 }
 
-/* SOCIALS */
 .info-socials {
   display: flex;
   gap: 1rem;
@@ -274,40 +297,6 @@
   border-color: #00B5E2;
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 181, 226, 0.3);
-}
-
-/* FORM CARD */
-.contact-form-card {
-  background: rgba(15, 23, 42, 0.65);
-  border: 1px solid rgba(0, 181, 226, 0.15);
-  border-radius: 1.5rem;
-  padding: 2.5rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.01);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-form-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #00B5E2, #00629B);
-}
-
-.form-glow {
-  position: absolute;
-  bottom: -20%;
-  left: -20%;
-  width: 60%;
-  height: 60%;
-  background: radial-gradient(circle, rgba(0, 98, 155, 0.08) 0%, transparent 70%);
-  pointer-events: none;
 }
 
 .env-warning {
@@ -413,7 +402,6 @@
   cursor: not-allowed;
 }
 
-/* SUBMIT SPINNER */
 .submit-spinner-wrapper {
   display: flex;
   align-items: center;
@@ -430,10 +418,11 @@
 }
 
 @keyframes submit-spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-/* ERROR BOX */
 .form-error-box {
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.25);
@@ -446,7 +435,6 @@
   font-size: 0.9rem;
 }
 
-/* SUCCESS STATE */
 .form-success-state {
   display: flex;
   flex-direction: column;

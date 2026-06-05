@@ -21,8 +21,6 @@ body {
   background: var(--color-page-bg);
   color: var(--color-page-text);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
@@ -42,7 +40,7 @@ body {
   color: #f8fafc;
   cursor: pointer;
   box-shadow: 0 14px 34px rgba(10, 25, 47, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
-  transition: transform 180ms cubic-bezier(.2,.9,.2,1), box-shadow 180ms, border-color 180ms, background 180ms;
+  transition: transform 180ms cubic-bezier(.2, .9, .2, 1), box-shadow 180ms, border-color 180ms, background 180ms;
   backdrop-filter: blur(10px);
 }
 
@@ -86,17 +84,6 @@ body {
   .back-to-top-fab:active {
     transform: none;
   }
-}
-
-img,
-iframe,
-svg {
-  display: block;
-}
-
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
