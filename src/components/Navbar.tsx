@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import bppimtLogo from '../assets/logos/bppimt.svg';
+import bppimtLogo from '../../public/logos/bppimt.svg';
 import './Navbar.css';
 
 const Navbar = () => {

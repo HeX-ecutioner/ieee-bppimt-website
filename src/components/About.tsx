@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, ChevronRight } from 'lucide-react';
-import branchLogo from '../assets/logos/branch-logo.svg';
 import './About.css';
 
 const About = () => {
@@ -83,7 +82,7 @@ const About = () => {
 
             <div className="about-card">
               <img
-                src={branchLogo}
+                src="/logos/branch-logo.svg"
                 alt="IEEE BPPIMT branch logo"
                 className="about-logo"
                 loading="lazy"
