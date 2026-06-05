@@ -60,10 +60,10 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://www.ieee.org/membership/join/"
+                href="societies"
                 className="hero-btn-secondary"
               >
-                Join IEEE
+                View Societies
                 <UserPlus className="hero-icon" />
               </motion.a>
             </div>
