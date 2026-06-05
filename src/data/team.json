@@ -1,4 +1,4 @@
-﻿{
+{
   "coreTeam": [
     {
       "id": 3,
@@ -61,7 +61,59 @@
       }
     },
     {
+      "id": 1,
+      "name": "Annwita Pal",
+      "role": "Core Member",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/annwita.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Sougata Nayek",
+      "role": "Core Member",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/sougata.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
       "id": 3,
+      "name": "Anannya Sarkar",
+      "role": "Core Member",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/anannya.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Ayantika Maity",
+      "role": "Core Member",
+      "society": "Electron Device Society",
+      "department": "Electronics & Communications Engineering",
+      "image": "/pics/ayantika.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "github": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 5,
       "name": "Ishika Chowdhury",
       "role": "Core Member",
       "department": "Computer Science & Engineering",
@@ -76,6 +128,17 @@
   "facultyMentors": [
     {
       "id": 1,
+      "name": "Dr. Nabanita Das",
+      "role": "Senior Member",
+      "department": "Computer Science & Engineering",
+      "image": "/pics/nabanita.jpeg",
+      "socials": {
+        "linkedin": "#",
+        "email": "#"
+      }
+    },
+    {
+      "id": 2,
       "name": "Dr. Ramesh Kumar",
       "role": "Counselor",
       "department": "Electronics & Communications Engineering",
@@ -86,7 +149,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Mr. Proshanta Sarkar",
       "role": "Faculty Advisor",
       "department": "Computer Science & Engineering",
@@ -97,7 +160,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Ms. Ankita Indu",
       "role": "Faculty Advisor",
       "department": "Electronics & Communications Engineering",
@@ -111,10 +174,9 @@
   "facultyMembers": [
     {
       "id": 1,
-      "name": "Dr. Nabanita Das",
-      "role": "Senior Member",
-      "department": "Computer Science & Engineering",
-      "image": "/pics/nabanita.jpeg",
+      "name": "Prof. Dr. Sutapa Mukherjee",
+      "role": "Member",
+      "department": "Electronics & Communications Engineering",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -122,10 +184,9 @@
     },
     {
       "id": 2,
-      "name": "Prof. Dr. Sutapa Mukherjee",
+      "name": "Dr. Ananya Kanjilal",
       "role": "Member",
-      "department": "Electronics & Communications Engineering",
-      "image": "/pics/sutapa.jpeg",
+      "department": "Computer Science & Engineering",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -133,10 +194,9 @@
     },
     {
       "id": 3,
-      "name": "Dr. Ananya Kanjilal",
+      "name": "Dr. Nandita Sanyal",
       "role": "Member",
-      "department": "Computer Science & Engineering",
-      "image": "/pics/ananya.jpeg",
+      "department": "Electrical Engineering",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -144,10 +204,9 @@
     },
     {
       "id": 4,
-      "name": "Dr. Nandita Sanyal",
+      "name": "Dr. Bikromadittya Mondal",
       "role": "Member",
-      "department": "Electrical Engineering",
-      "image": "/pics/nandita.jpeg",
+      "department": "Artificial Intelligence & Machine Learning",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -155,10 +214,9 @@
     },
     {
       "id": 5,
-      "name": "Dr. Bikromadittya Mondal",
+      "name": "Dr. Jayeeta Chanda",
       "role": "Member",
-      "department": "Artificial Intelligence & Machine Learning",
-      "image": "/pics/bikromadittya.jpeg",
+      "department": "Computer Science & Engineering",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -166,10 +224,9 @@
     },
     {
       "id": 6,
-      "name": "Dr. Jayeeta Chanda",
+      "name": "Dr. Susmita Dey",
       "role": "Member",
       "department": "Computer Science & Engineering",
-      "image": "/pics/jayeeta.jpeg",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -177,10 +234,9 @@
     },
     {
       "id": 7,
-      "name": "Dr. Susmita Dey",
+      "name": "Dr. Arijit Dey",
       "role": "Member",
-      "department": "Computer Science & Engineering",
-      "image": "/pics/susmita.jpeg",
+      "department": "Computer Applications",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -188,21 +244,9 @@
     },
     {
       "id": 8,
-      "name": "Dr. Arijit Dey",
-      "role": "Member",
-      "department": "Computer Applications",
-      "image": "/pics/arijit.jpeg",
-      "socials": {
-        "linkedin": "#",
-        "email": "#"
-      }
-    },
-    {
-      "id": 9,
       "name": "Mr. Subhasish Das",
       "role": "Member",
       "department": "Electrical Engineering",
-      "image": "/pics/subhasish.jpeg",
       "socials": {
         "linkedin": "#",
         "email": "#"
@@ -388,17 +432,6 @@
     },
     {
       "id": 17,
-      "name": "Sagnik Maitra",
-      "society": "Communications Society",
-      "department": "Computer Science & Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
-    },
-    {
-      "id": 18,
       "name": "Ahana Maiti",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
@@ -409,7 +442,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Rituja Ganguly",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
@@ -420,7 +453,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "Ishita Mazumder",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
