@@ -20,22 +20,28 @@ interface EventData {
   description: string;
   image: string;
   category: string;
-  isUpcoming: boolean;
-  registrationLink?: string;
+  status: 'upcoming' | 'live' | 'past';
+  link?: string;
 }
 
 const Events = () => {
-  const { upcomingEvents, pastEvents } = useMemo(() => {
-    const events = eventData.events as EventData[];
-    const sorted = [...events].sort((a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime());
+  const { activeEvent, pastEvents } = useMemo(() => {
+    const events = eventData.events as EventData[],
+      sorted = [...events].sort((a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime()),
+      active = sorted.find((e) => e.status === 'live') || sorted.find((e) => e.status === 'upcoming') || null;
     return {
-      upcomingEvents: sorted.filter((e) => e.isUpcoming),
-      pastEvents: sorted.filter((e) => !e.isUpcoming),
+      activeEvent: active,
+      pastEvents: sorted.filter((e) => e.status === 'past'),
     };
   }, []);
 
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [selectedUpcoming, setSelectedUpcoming] = useState<UpcomingImageDetails | null>(null);
+  const headingText = useMemo(() => {
+    if (activeEvent?.status === 'live') return { main: 'Live', highlight: 'Event' };
+    return { main: 'Upcoming', highlight: 'Event' };
+  }, [activeEvent]);
+
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null),
+    [selectedUpcoming, setSelectedUpcoming] = useState<UpcomingImageDetails | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = (selectedIndex !== null || selectedUpcoming) ? 'hidden' : '';
@@ -69,35 +75,51 @@ const Events = () => {
       <div className="events-master-container">
         <div className="upcoming-section">
           <div className="section-header">
-            <h2 className="events-title">Upcoming <span className="text-highlight">Events</span></h2>
-            <p className="events-subtitle">Register now for our latest programs and workshops.</p>
+            <h2 className="events-title">
+              {headingText.main} <span className="text-highlight">{headingText.highlight}</span>
+            </h2>
           </div>
 
           <div className="upcoming-content">
-            {upcomingEvents.length > 0 ? (
-              upcomingEvents.map((event) => (
-                <motion.div key={event.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="glass-card upcoming-card">
-                  <div className="upcoming-image-box clickable" onClick={() => setSelectedUpcoming(event)}>
-                    <img src={event.image} alt={event.title} loading="lazy" />
-                    <span className="category-badge">{event.category}</span>
-                    <div className="image-overlay"><Maximize2 size={24} className="zoom-icon" /></div>
+            {activeEvent ? (
+              <motion.div
+                key={activeEvent.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className={`glass-card upcoming-card ${activeEvent.status === 'live' ? 'live-event-card' : ''}`}
+              >
+                <div className="upcoming-image-box clickable" onClick={() => setSelectedUpcoming(activeEvent)}>
+                  <img src={activeEvent.image} alt={activeEvent.title} loading="lazy" />
+                  <span className="category-badge">{activeEvent.category}</span>
+                  {activeEvent.status === 'live' && (
+                    <span className="live-badge">
+                      <span className="live-dot" /> LIVE
+                    </span>
+                  )}
+                  <div className="image-overlay"><Maximize2 size={24} className="zoom-icon" /></div>
+                </div>
+                <div className="upcoming-details">
+                  <h3>{activeEvent.title}</h3>
+                  <p>{activeEvent.description}</p>
+                  <div className="meta-info">
+                    <span>
+                      <CalendarDays size={16} />{' '}
+                      {new Date(activeEvent.isoDate).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                      })}
+                    </span>
+                    <span><Clock size={16} /> {activeEvent.time}</span>
+                    <span><MapPin size={16} /> {activeEvent.venue}</span>
                   </div>
-                  <div className="upcoming-details">
-                    <h3>{event.title}</h3>
-                    <p>{event.description}</p>
-                    <div className="meta-info">
-                      <span><CalendarDays size={16} /> {new Date(event.isoDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
-                      <span><Clock size={16} /> {event.time}</span>
-                      <span><MapPin size={16} /> {event.venue}</span>
-                    </div>
-                    {event.registrationLink && (
-                      <a href={event.registrationLink} target="_blank" rel="noopener noreferrer" className="register-btn">
-                        Register Now <ArrowRight size={16} />
-                      </a>
-                    )}
-                  </div>
-                </motion.div>
-              ))
+                  {activeEvent.link && (
+                    <a href={activeEvent.link} target="_blank" rel="noopener noreferrer" className="register-btn">
+                      {activeEvent.status === 'live' ? 'View Event' : 'Register Now'} <ArrowRight size={16} />
+                    </a>
+                  )}
+                </div>
+              </motion.div>
             ) : (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="glass-card empty-state">
                 <div className="empty-state-content">

@@ -10,7 +10,7 @@
             "description": "Make your first step into Opensource with Sunit Roy, GSOC'21 @Tensorflow.",
             "image": "/events/gsoc.jpg",
             "category": "Seminar",
-            "isUpcoming": false
+            "status": "past"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@
             "description": "Celebrating Open Source and Hacktoberfest with Arkadip Bhattacharya.",
             "image": "/events/hacktoberfest.png",
             "category": "Event",
-            "isUpcoming": false
+            "status": "past"
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             "description": "A tech-based quiz competition with exciting swags on the way.",
             "image": "/events/quiz-event.jpg",
             "category": "Quiz",
-            "isUpcoming": false
+            "status": "past"
         },
         {
             "id": 4,
@@ -46,7 +46,7 @@
             "description": "Tools & Techniques of Remote Sensing Applications by Smt. Sharmistha B Pandey, ISRO.",
             "image": "/events/spacelens.png",
             "category": "Seminar",
-            "isUpcoming": false
+            "status": "past"
         },
         {
             "id": 5,
@@ -58,7 +58,7 @@
             "description": "One Day Symposium on ChatGPT: Opportunities & Challenges for Education.",
             "image": "/events/symposium.png",
             "category": "Symposium",
-            "isUpcoming": false
+            "status": "past"
         },
         {
             "id": 6,
@@ -70,8 +70,8 @@
             "description": "Join us in the very first event organized by the 2026 IEEE Student Branch of BPPIMT.",
             "image": "/events/awareness.png",
             "category": "Seminar",
-            "isUpcoming": true,
-            "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfhjMUnRh7dYboFaTuvt5XrpcpuFiAUeyMRrJzswV1nn_gG0A/viewform?usp=dialog"
+            "status": "live",
+            "link": "https://docs.google.com/forms/d/e/1FAIpQLSfhjMUnRh7dYboFaTuvt5XrpcpuFiAUeyMRrJzswV1nn_gG0A/viewform?usp=dialog"
         }
     ]
 }
