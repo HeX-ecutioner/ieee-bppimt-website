@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { Mail, GraduationCap } from 'lucide-react';
-import { FiLinkedin as Linkedin, FiGithub as Github } from 'react-icons/fi';
+import { Linkedin, Github } from '../utils/SocialIcons';
 import teamData from '../data/team.json';
 import './styles/Team.css';
 
@@ -40,9 +40,7 @@ const SectionHeading = ({ children, subtitle }: { children: React.ReactNode, sub
 );
 
 const SocialLink = ({ href, icon: Icon, size }: { href: string, icon: React.ElementType, size?: number }) => (
-  <a href={href} target="_blank" rel="noreferrer" className="social-icon">
-    <Icon size={size} />
-  </a>
+  <a href={href} target="_blank" rel="noreferrer" className="social-icon"><Icon size={size} /></a>
 );
 
 const SocialLinksGroup = ({ socials, size }: { socials?: SocialLinksType, size?: number }) => {

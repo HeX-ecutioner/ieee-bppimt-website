@@ -1,20 +1,20 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Check, AlertCircle, Sparkles } from 'lucide-react';
-import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
+import { Facebook, Twitter, Instagram, Linkedin } from '../utils/SocialIcons';
 import emailjs from '@emailjs/browser';
 import './styles/Contact.css';
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || '';
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '';
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+  TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
+  PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
-  const formRef = useRef<HTMLFormElement>(null);
-  const isConfigured = !!(SERVICE_ID && TEMPLATE_ID && PUBLIC_KEY);
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' }),
+    [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle'),
+    [errorMessage, setErrorMessage] = useState(''),
+    formRef = useRef<HTMLFormElement>(null),
+    isConfigured = !!(SERVICE_ID && TEMPLATE_ID && PUBLIC_KEY);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -121,10 +121,10 @@ export default function Contact() {
 
             <div className="info-socials">
               {[
-                { Icon: FiFacebook, url: "https://www.facebook.com/bppimtofficial/" },
-                { Icon: FiTwitter, url: "https://x.com/bppimtofficial" },
-                { Icon: FiInstagram, url: "https://www.instagram.com/bppimt/" },
-                { Icon: FiLinkedin, url: "https://www.linkedin.com/school/bp-poddar-institute-of-management-and-technology/" }
+                { Icon: Facebook, url: "https://www.facebook.com/bppimtofficial/" },
+                { Icon: Twitter, url: "https://x.com/bppimtofficial" },
+                { Icon: Instagram, url: "https://www.instagram.com/bppimt/" },
+                { Icon: Linkedin, url: "https://www.linkedin.com/school/bp-poddar-institute-of-management-and-technology/" }
               ].map((social, i) => (
                 <a key={i} href={social.url} target="_blank" rel="noopener noreferrer" className="social-icon-btn"><social.Icon size={18} /></a>
               ))}
