@@ -129,7 +129,7 @@
     {
       "id": 1,
       "name": "Dr. Nabanita Das",
-      "role": "Chairperson, IEEE SIGHT",
+      "role": "Chairperson, IEEE SIGHT (Kolkata Section)",
       "department": "Computer Science & Engineering",
       "image": "/pics/nabanita.jpeg",
       "socials": {
@@ -174,9 +174,9 @@
   "facultyMembers": [
     {
       "id": 1,
-      "name": "Prof. Dr. Sutapa Mukherjee",
+      "name": "Dr. Sutapa Mukherjee",
       "role": "Member",
-      "department": "Electronics & Communications Engineering",
+      "department": "Electrical Engineering",
       "socials": {
         "linkedin": "#",
         "email": "#"
