@@ -70,8 +70,7 @@
             "description": "Join us in the very first event organized by the 2026 IEEE Student Branch of BPPIMT.",
             "image": "/events/awareness.png",
             "category": "Seminar",
-            "status": "live",
-            "link": "https://docs.google.com/forms/d/e/1FAIpQLSfhjMUnRh7dYboFaTuvt5XrpcpuFiAUeyMRrJzswV1nn_gG0A/viewform?usp=dialog"
+            "status": "past"
         }
     ]
 }
