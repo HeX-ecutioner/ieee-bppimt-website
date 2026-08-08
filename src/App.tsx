@@ -9,7 +9,7 @@ import Top from './utils/Top';
 const Team = lazy(() => import('./components/Team')),
   VisionMission = lazy(() => import('./components/VisionMission')),
   Contact = lazy(() => import('./components/Contact')),
-  Societies = lazy(() => import('./components/Societies'));
+  Chapters = lazy(() => import('./components/Chapters'));
 
 export default function App() {
   return (
@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/vision-mission" element={<VisionMission />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/societies" element={<Societies />} />
+            <Route path="/chapters" element={<Chapters />} />
           </Routes>
         </main>
         <Footer />

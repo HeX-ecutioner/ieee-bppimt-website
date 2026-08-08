@@ -1,13 +1,12 @@
 {
-    "societies": [
+    "chapters": [
         {
             "id": "comsoc",
             "name": "IEEE Communications Society (ComSoc)",
             "shortName": "ComSoc",
             "description": "Promoting the advancement of science, technology and applications in communications and related disciplines.",
             "logo": "/logos/ieee-comsoc.svg",
-            "link": "https://www.comsoc.org/",
-            "color": "#00629b"
+            "link": "https://www.comsoc.org/"
         },
         {
             "id": "mtts",
@@ -15,8 +14,7 @@
             "shortName": "MTT-S",
             "description": "Promoting the advancement of microwave theory and its applications, including RF, microwave, millimeter-wave, and terahertz technologies.",
             "logo": "/logos/ieee-mtt-s.svg",
-            "link": "https://mtt.org/",
-            "color": "#0a192f"
+            "link": "https://mtt.org/"
         },
         {
             "id": "eds",
@@ -24,8 +22,15 @@
             "shortName": "EDS",
             "description": "To foster professional growth and advance the fields of electron and ion devices, encompassing all related technologies.",
             "logo": "/logos/ieee-eds.svg",
-            "link": "https://eds.ieee.org/",
-            "color": "#00629b"
+            "link": "https://eds.ieee.org/"
+        },
+        {
+            "id": "aps",
+            "name": "IEEE Antennas and Propagation Society (AP-S)",
+            "shortName": "AP-S",
+            "description": "Promoting the advancement of antenna and propagation technologies, including their applications in communications, radar, and remote sensing.",
+            "logo": "/logos/ieee-aps.svg",
+            "link": "https://ieeeaps.org/"
         }
     ]
 }
