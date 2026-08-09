@@ -1,36 +1,44 @@
 {
-    "chapters": [
-        {
-            "id": "comsoc",
-            "name": "IEEE Communications Society (ComSoc)",
-            "shortName": "ComSoc",
-            "description": "Promoting the advancement of science, technology and applications in communications and related disciplines.",
-            "logo": "/logos/ieee-comsoc.svg",
-            "link": "https://www.comsoc.org/"
-        },
-        {
-            "id": "mtts",
-            "name": "IEEE Microwave Theory and Technology Society (MTT-S)",
-            "shortName": "MTT-S",
-            "description": "Promoting the advancement of microwave theory and its applications, including RF, microwave, millimeter-wave, and terahertz technologies.",
-            "logo": "/logos/ieee-mtt-s.svg",
-            "link": "https://mtt.org/"
-        },
-        {
-            "id": "eds",
-            "name": "IEEE Electron Devices Society (EDS)",
-            "shortName": "EDS",
-            "description": "To foster professional growth and advance the fields of electron and ion devices, encompassing all related technologies.",
-            "logo": "/logos/ieee-eds.svg",
-            "link": "https://eds.ieee.org/"
-        },
-        {
-            "id": "aps",
-            "name": "IEEE Antennas and Propagation Society (AP-S)",
-            "shortName": "AP-S",
-            "description": "Promoting the advancement of antenna and propagation technologies, including their applications in communications, radar, and remote sensing.",
-            "logo": "/logos/ieee-aps.svg",
-            "link": "https://ieeeaps.org/"
-        }
-    ]
+  "chapters": [
+    {
+      "id": "comsoc",
+      "name": "IEEE Communications Society",
+      "shortName": "ComSoc",
+      "description": "Advancing global communications, wireless networks, signal processing, and telecommunications technology.",
+      "logo": "/logos/ieee-comsoc.svg",
+      "link": "https://www.comsoc.org/"
+    },
+    {
+      "id": "mtts",
+      "name": "IEEE Microwave Theory & Technology Society",
+      "shortName": "MTT-S",
+      "description": "Pioneering microwave theory, RF engineering, millimeter-wave technologies, and terahertz applications.",
+      "logo": "/logos/ieee-mtt-s.svg",
+      "link": "https://mtt.org/"
+    },
+    {
+      "id": "eds",
+      "name": "IEEE Electron Devices Society",
+      "shortName": "EDS",
+      "description": "Fostering research in electron and ion devices, semiconductor physics, VLSI design, and nanotechnology.",
+      "logo": "/logos/ieee-eds.svg",
+      "link": "https://eds.ieee.org/"
+    },
+    {
+      "id": "aps",
+      "name": "IEEE Antennas & Propagation Society",
+      "shortName": "AP-S",
+      "description": "Promoting wave propagation, antenna design, electromagnetic theory, and advanced sensing systems.",
+      "logo": "/logos/ieee-ap-s.svg",
+      "link": "https://ieeeaps.org/"
+    },
+    {
+      "id": "ias",
+      "name": "IEEE Industry Applications Society",
+      "shortName": "IAS",
+      "description": "Driving industrial automation, power electronic systems, motor drives, and energy efficiency solutions.",
+      "logo": "/logos/ieee-ias.svg",
+      "link": "https://ias.ieee.org/"
+    }
+  ]
 }
