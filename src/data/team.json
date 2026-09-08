@@ -5,11 +5,10 @@
       "name": "Urba Das",
       "role": "Chairperson",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/urba.jpeg",
+      "image": "/pfps/urba.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/urba-das-95b786337",
+        "email": "mailto:urbadas001@gmail.com"
       }
     },
     {
@@ -17,11 +16,9 @@
       "name": "Aman Jha",
       "role": "Vice Chairperson",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/aman.jpeg",
+      "image": "/pfps/aman.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "email": "mailto:ajha65189@gmail.com"
       }
     },
     {
@@ -29,11 +26,11 @@
       "name": "Rittika Chatterjee",
       "role": "Secretary",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/rittika.jpeg",
+      "image": "/pfps/rittika.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/rittika-chatterjee-ab383a324?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "github": "https://github.com/rittikachatterjee25-stack",
+        "email": "mailto:rittikachatterjee25@gmail.com"
       }
     },
     {
@@ -41,11 +38,11 @@
       "name": "Ushree Ghosh",
       "role": "Treasurer",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/ushree.jpeg",
+      "image": "/pfps/ushree.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/ushree-ghosh-ab9600359",
+        "github": "https://github.com/Ushree-Ghosh",
+        "email": "mailto:ushreeghosh14@gmail.com"
       }
     },
     {
@@ -53,7 +50,7 @@
       "name": "Sagnik Maitra",
       "role": "Webmaster",
       "department": "Computer Science & Engineering",
-      "image": "/pics/sagnik.jpeg",
+      "image": "/pfps/sagnik.jpeg",
       "socials": {
         "linkedin": "https://www.linkedin.com/in/sagnikmaitra",
         "github": "https://github.com/HeX-ecutioner",
@@ -66,11 +63,10 @@
       "role": "Core Member",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/annwita.jpeg",
+      "image": "/pfps/annwita.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/annwita-pal-115639326",
+        "email": "mailto:Deeyapal05@gmail.com"
       }
     },
     {
@@ -79,12 +75,8 @@
       "role": "Core Member",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/sougata.jpeg",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "image": "/pfps/sougata.jpeg",
+      "socials": {}
     },
     {
       "id": 3,
@@ -92,12 +84,8 @@
       "role": "Core Member",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/anannya.jpeg",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "image": "/pfps/anannya.jpeg",
+      "socials": {}
     },
     {
       "id": 4,
@@ -105,11 +93,9 @@
       "role": "Core Member",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/ayantika.jpeg",
+      "image": "/pfps/ayantika.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "email": "mailto:maityayantika0@gmail.com"
       }
     },
     {
@@ -117,11 +103,11 @@
       "name": "Ishika Chowdhury",
       "role": "Core Member",
       "department": "Computer Science & Engineering",
-      "image": "/pics/ishika.jpeg",
+      "image": "/pfps/ishika.jpeg",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://linkedin.com/in/ishika-chowdhury-046637359/",
+        "github": "https://github.com/i5hika0x",
+        "email": "mailto:ishikac006@gmail.com"
       }
     }
   ],
@@ -131,10 +117,9 @@
       "name": "Dr. Nabanita Das",
       "role": "Chairperson, IEEE SIGHT (Kolkata Section)",
       "department": "Computer Science & Engineering",
-      "image": "/pics/nabanita.jpeg",
+      "image": "/pfps/nabanita.jpeg",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/prof-nabanita-das-7763602b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
       }
     },
     {
@@ -142,10 +127,9 @@
       "name": "Dr. Ramesh Kumar",
       "role": "Counselor",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/ramesh.jpeg",
+      "image": "/pfps/ramesh.jpeg",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/rameshnestor"
       }
     },
     {
@@ -153,10 +137,9 @@
       "name": "Mr. Proshanta Sarkar",
       "role": "Faculty Advisor",
       "department": "Computer Science & Engineering",
-      "image": "/pics/proshanta.jpeg",
+      "image": "/pfps/proshanta.jpeg",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/proshanta-sarkar-5007717b"
       }
     },
     {
@@ -164,10 +147,9 @@
       "name": "Ms. Ankita Indu",
       "role": "Faculty Advisor",
       "department": "Electronics & Communications Engineering",
-      "image": "/pics/ankita.jpeg",
+      "image": "/pfps/ankita.jpeg",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/ankita-indu-6a95b337"
       }
     }
   ],
@@ -178,8 +160,7 @@
       "role": "Member",
       "department": "Electrical Engineering",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/sutapa-mukherjee-a0bba3a3"
       }
     },
     {
@@ -188,8 +169,7 @@
       "role": "Member",
       "department": "Computer Science & Engineering",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/ananya-kanjilal-18693630"
       }
     },
     {
@@ -198,8 +178,7 @@
       "role": "Member",
       "department": "Electrical Engineering",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/nandita-sanyal-ghosh-636b1915"
       }
     },
     {
@@ -208,8 +187,7 @@
       "role": "Member",
       "department": "Artificial Intelligence & Machine Learning",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/bikromadittya-mondal-415035159"
       }
     },
     {
@@ -218,8 +196,7 @@
       "role": "Member",
       "department": "Computer Science & Engineering",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/jayeeta-chanda-50932169"
       }
     },
     {
@@ -227,10 +204,7 @@
       "name": "Dr. Susmita Dey",
       "role": "Member",
       "department": "Computer Science & Engineering",
-      "socials": {
-        "linkedin": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 7,
@@ -238,8 +212,7 @@
       "role": "Member",
       "department": "Computer Applications",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/dr-arijit-dey-22aa17121"
       }
     },
     {
@@ -248,8 +221,7 @@
       "role": "Member",
       "department": "Electrical Engineering",
       "socials": {
-        "linkedin": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/subhasishdas06"
       }
     }
   ],
@@ -260,9 +232,9 @@
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/sneha-patra-9a1922346/",
+        "github": "https://github.com/SneJ2703",
+        "email": "mailto:snehapatra005@gmail.com"
       }
     },
     {
@@ -271,9 +243,9 @@
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/urna-b-a02519366?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "github": "https://github.com/urnabanerjee55-a11y",
+        "email": "mailto:urnabanerjee55@gmail.com"
       }
     },
     {
@@ -282,9 +254,9 @@
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/sukanya-sarkar-ab4b75330",
+        "github": "https://github.com/SSTheCoderBuddy",
+        "email": "mailto:ssarkar1510@gmail.com"
       }
     },
     {
@@ -293,9 +265,9 @@
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/kanakanjali-chatterjee-663765384?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "github": "https://github.com/jiokanakanjali2006-png",
+        "email": "mailto:kanakanjalichatterjee@gmail.com"
       }
     },
     {
@@ -304,9 +276,8 @@
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/ayantika-das-248971330",
+        "email": "mailto:dasayantika0805@gmail.com"
       }
     },
     {
@@ -314,22 +285,14 @@
       "name": "Anshuman Guha",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 7,
       "name": "Kritiban Kamliya",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 8,
@@ -337,9 +300,7 @@
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "email": "mailto:swastikabiswas.ece324022@bppimt.ac.in"
       }
     },
     {
@@ -347,22 +308,14 @@
       "name": "Susanta Sarkar",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 10,
       "name": "Subhajit Jha",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 11,
@@ -370,9 +323,7 @@
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "email": "mailto:subhajitguin09876@gmail.com"
       }
     },
     {
@@ -381,9 +332,7 @@
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "email": "mailto:jitkundu2024@gmail.com"
       }
     },
     {
@@ -391,22 +340,14 @@
       "name": "Soheli Panda",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 14,
       "name": "Meghali Dutta",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 15,
@@ -414,9 +355,8 @@
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/ishita-mazumder-335b59340?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "email": "mailto:ishitamazumder56@gmail.com"
       }
     },
     {
@@ -424,11 +364,7 @@
       "name": "Abir Shee",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
-      "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
-      }
+      "socials": {}
     },
     {
       "id": 17,
@@ -436,9 +372,9 @@
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "linkedin": "https://www.linkedin.com/in/ahana-maiti-56b748320?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        "github": "https://github.com/I-Lawrence",
+        "email": "mailto:2006ahana@gmail.com"
       }
     },
     {
@@ -446,10 +382,43 @@
       "name": "Rituja Ganguly",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
+      "socials": {}
+    },
+    {
+      "id": 19,
+      "name": "Ayan Manna",
+      "society": "Industry Applications Society",
+      "department": "Electrical Engineering",
+      "socials": {}
+    },
+    {
+      "id": 20,
+      "name": "Ritankar Bhattacharjee",
+      "society": "Antenna Propagation Society",
+      "department": "Electronics and Communication Engineering",
       "socials": {
-        "linkedin": "#",
-        "github": "#",
-        "email": "#"
+        "email": "mailto:ritankarbhattacharjee77@gmail.com"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Aadipto Ghosh",
+      "society": "Antenna Propagation Society",
+      "department": "Electronics and Communication Engineering",
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/aadipto-ghosh/",
+        "github": "https://github.com/AadiptoGhosh",
+        "email": "mailto:aadiptoghosh10@gmail.com"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Rishita Saha",
+      "society": "Antenna Propagation Society",
+      "department": "Electronics and Communication Engineering",
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/rishita-saha-a35121360",
+        "email": "mailto:rishitas099@gmail.com"
       }
     }
   ]
