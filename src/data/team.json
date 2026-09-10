@@ -66,17 +66,19 @@
       "image": "/pfps/annwita.jpeg",
       "socials": {
         "linkedin": "https://www.linkedin.com/in/annwita-pal-115639326",
-        "email": "mailto:Deeyapal05@gmail.com"
+        "email": "mailto:deeyapal05@gmail.com"
       }
     },
     {
       "id": 2,
-      "name": "Sougata Nayek",
+      "name": "Sougata Nayak",
       "role": "Core Member",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
       "image": "/pfps/sougata.jpeg",
-      "socials": {}
+      "socials": {
+        "email": "mailto:sougatanayak71@gmail.com"
+      }
     },
     {
       "id": 3,
@@ -85,7 +87,9 @@
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
       "image": "/pfps/anannya.jpeg",
-      "socials": {}
+      "socials": {
+        "email": "mailto:anannyasar2005@gmail.com"
+      }
     },
     {
       "id": 4,
@@ -285,7 +289,9 @@
       "name": "Anshuman Guha",
       "society": "Microwave Theory and Technology Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:guhaanshuman394@gmail.com"
+      }
     },
     {
       "id": 7,
@@ -300,22 +306,26 @@
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
       "socials": {
-        "email": "mailto:swastikabiswas.ece324022@bppimt.ac.in"
+        "email": "mailto:swastikabiswas282005@gmail.com"
       }
     },
     {
       "id": 9,
-      "name": "Susanta Sarkar",
+      "name": "Susnata Sarkar",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:susnatasunny123@gmail.com"
+      }
     },
     {
       "id": 10,
       "name": "Subhajit Jha",
       "society": "Electron Device Society",
       "department": "Electronics & Communications Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:subhajitjha1@gmail.com"
+      }
     },
     {
       "id": 11,
@@ -340,14 +350,18 @@
       "name": "Soheli Panda",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:sohelipanda2025@gmail.com"
+      }
     },
     {
       "id": 14,
       "name": "Meghali Dutta",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:meghalidutta78@gmail.com"
+      }
     },
     {
       "id": 15,
@@ -364,7 +378,9 @@
       "name": "Abir Shee",
       "society": "Communications Society",
       "department": "Computer Science & Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:abirsheecsekolkata004@gmail.com"
+      }
     },
     {
       "id": 17,
@@ -389,7 +405,9 @@
       "name": "Ayan Manna",
       "society": "Industry Applications Society",
       "department": "Electrical Engineering",
-      "socials": {}
+      "socials": {
+        "email": "mailto:mannaayan777@gmail.com"
+      }
     },
     {
       "id": 20,
@@ -419,6 +437,33 @@
       "socials": {
         "linkedin": "https://www.linkedin.com/in/rishita-saha-a35121360",
         "email": "mailto:rishitas099@gmail.com"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Somshree Karar",
+      "society": "Microwave Theory and Technology Society",
+      "department": "Electronics and Communication Engineering",
+      "socials": {
+        "email": "mailto:somshreekarar@gmail.com"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Soumadeep Jana",
+      "society": "Electron Device Society",
+      "department": "Electronics and Communication Engineering",
+      "socials": {
+        "email": "mailto:soumadeepjana05@gmail.com"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Somrik Nandy",
+      "society": "Electron Device Society",
+      "department": "Electronics and Communication Engineering",
+      "socials": {
+        "email": "mailto:somriknandy2@gmail.com"
       }
     }
   ]
